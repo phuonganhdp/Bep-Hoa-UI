@@ -152,4 +152,90 @@ svg {
   display: block;
 }
 
+.bh-home_banner-top {
+  padding: 16px 20px 0;
+  position: relative;
+  margin-bottom: 30px;
+}
+.bh-home_banner-top:before {
+  width: 100%;
+  height: calc(100% - 20px);
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, #FFE6CE 0%, rgba(255, 230, 206, 0) 100%);
+}
+.bh-home_banner-top .address-store {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.bh-home_banner-top .address-store .icn {
+  width: 16px;
+  display: block;
+  margin-right: 9px;
+}
+.bh-home_banner-top .address-store .name {
+  font-size: 13px;
+  line-height: 100%;
+  color: #222222;
+  margin-left: 0;
+  margin-right: auto;
+}
+.bh-home_banner-top .address-store .changeBtn {
+  font-size: 12px;
+  line-height: 100%;
+  display: block;
+  color: var(--colorRed);
+}
+.bh-home_banner-top .swiper-hbanner {
+  position: relative;
+  border-radius: 6px;
+}
+.bh-home_banner-top .swiper-hbanner .bannerHome {
+  width: 100%;
+  display: block;
+}
+.bh-home_banner-top .swiper-hbanner .bannerHome i {
+  width: 100%;
+  padding-top: 41.79%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  border-radius: 6px;
+}
+.bh-home_banner-top .swiper-hbanner .swiper-pagination {
+  bottom: 0;
+  height: 20px;
+  box-sizing: border-box;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(40px);
+}
+.bh-home_banner-top .swiper-hbanner .swiper-pagination .swiper-pagination-bullet {
+  opacity: 0.3;
+  background: #A08C78;
+  width: 5px;
+  height: 5px;
+  margin: 0;
+}
+.bh-home_banner-top .swiper-hbanner .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.bh-home_banner-top .swiper-hbanner .swiper-pagination .swiper-pagination-bullet + .swiper-pagination-bullet {
+  margin-left: 8px;
+}
+
+.bh-wrapper {
+  padding-top: 60px;
+}
+
 /*# sourceMappingURL=main.css.map */

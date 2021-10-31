@@ -1,8 +1,8 @@
 ﻿let App = {
     windowW: $(window).width(),
-    initHelpers: function($helpers) {
+    initHelpers: function ($helpers) {
         let me = this;
-        $(document).ready(function() {
+        $(document).ready(function () {
             me.initHelper('common');
             if ($helpers != undefined) {
                 if ($helpers instanceof Array) {
@@ -18,7 +18,7 @@
         });
 
     },
-    initHelper: function($helper) {
+    initHelper: function ($helper) {
         let me = this;
         //console.log($helper);
         if ($helper.length > 0) {
@@ -28,9 +28,8 @@
 
     },
 
-    common: function() {
+    common: function () {
         let me = this;
-        //$('.timeago').timeago();
 
         if (me.windowW > 800) {
 
@@ -39,5 +38,25 @@
 
         }
     },
+    home: function () {
+        let me = this;
 
+        var swiperBannerHome = new Swiper(".swiper-hbanner", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            autoplay: {
+                delay: 3000
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-hbanner .swiper-pagination",
+            },
+        });
+        if (me.windowW > 800) {
+
+        } else {
+
+
+        }
+    },
 };
