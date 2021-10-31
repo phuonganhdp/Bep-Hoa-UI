@@ -1,0 +1,64 @@
+.bh-main-header {
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--colorRed);
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+
+  .header-content {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .burger {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+
+    .toggle-btn {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 14px;
+    }
+
+    i {
+      width: 100%;
+      height: 1.8px;
+      background: var(--colorBe);
+      position: absolute;
+      top: 0;
+
+      &:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &:nth-child(3) {
+        width: 50%;
+        top: auto;
+        bottom: 0;
+      }
+    }
+  }
+
+  .bh-logo {
+    width: 48px;
+    display: block;
+  }
+
+  .searchBox {
+    position: relative;
+
+    .searchBtn {
+      width: 24px;
+      display: block;
+    }
+  }
+}
