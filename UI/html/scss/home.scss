@@ -34,7 +34,7 @@
     .name {
       font-size: 13px;
       line-height: 100%;
-
+      font-family: BVNPro-Regular;
       color: #222222;
       margin-left: 0;
       margin-right: auto;
@@ -44,7 +44,7 @@
       font-size: 12px;
       line-height: 100%;
       display: block;
-
+      font-family: BVNPro-Regular;
       color: var(--colorRed);
 
     }
@@ -94,5 +94,312 @@
         margin: 0;
       }
     }
+  }
+}
+
+.bh-home-contact {
+  background: #FFFFFF;
+  border: 0.7px solid #D0D0D0;
+  box-sizing: border-box;
+  border-radius: 52px;
+  position: relative;
+  width: calc(100% - 40px);
+  margin: 0 auto 33px;
+
+  .text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8px;
+    line-height: 100%;
+    font-family: BVNPro-Bold;
+    top: -4px;
+    display: inline-block;
+    padding: 0 9px;
+    text-align: center;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    color: #B5292F;
+  }
+
+  .call-to {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icn {
+    width: 20px;
+    display: block;
+    margin-right: 13px;
+  }
+
+  .txt {
+    font-size: 17px;
+    line-height: 100%;
+    font-family: BVNPro-SemiBold;
+    display: block;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #222222;
+  }
+}
+
+.bh-home-menu {
+  .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .icn {
+      width: 60px;
+    }
+
+    .txt {
+      font-size: 15px;
+      line-height: 100%;
+      font-family: BVNPro-SemiBold;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin: 0 17px;
+      color: #222222;
+    }
+  }
+
+  .tagBox {
+    background: #ffffff;
+    z-index: 999 !important;
+
+    .menu__tags-list {
+      padding: 10px 0;
+
+      .swiper-slide {
+        &:nth-child(1) {
+          margin-left: 20px;
+        }
+
+        &:nth-last-child(1) {
+          margin-right: 60px;
+        }
+
+        width: auto;
+        margin-left: 8px;
+      }
+
+
+      .tags-filter {
+        &.active {
+          background: #B5292F;
+          color: #FFFFFF;
+        }
+
+        transition: .3s;
+        display: inline-flex;
+        background: #F6F6F6;
+        border-radius: 15px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        font-size: 13px;
+        line-height: 100%;
+        font-family: BVNPro-Regular;
+        text-align: center;
+        color: #222222;
+      }
+
+      .swiper-button-prev {
+        display: none;
+      }
+
+      .swiper-button-next {
+        &.swiper-button-disabled {
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        transition: .3s;
+        visibility: visible;
+        opacity: 1;
+        width: 60px;
+        background: none;
+        border: none;
+        outline: none;
+        right: 0;
+        top: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.bh-menu-list {
+  li {
+    &:nth-child(1) {
+      @extend .bt05;
+    }
+
+
+    @extend .bb05;
+    padding: 15px 20px;
+  }
+}
+
+.food-card {
+  display: flex;
+
+  &.hot {
+    .status {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .thumb {
+
+    width: 26.86%;
+    flex-shrink: 0;
+    margin-right: 15px;
+    position: relative;
+    display: block;
+
+    i {
+      width: 100%;
+      padding-top: 100%;
+      border-radius: 6px;
+      overflow: hidden;
+      @include bg-thumb();
+      @include img-border-inside();
+    }
+
+  }
+
+  .status {
+    background: #FFE600;
+    border-radius: 0px 14px 14px 0px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    display: inline-flex;
+    padding: 3px 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 10px;
+    line-height: 130%;
+    font-family: BVNPro-Medium;
+    color: #222222;
+
+  }
+
+  .total-food {
+    flex-grow: 1;
+  }
+
+  .name {
+    font-size: 15px;
+    line-height: 130%;
+    font-family: BVNPro-SemiBold;
+    display: block;
+    margin-bottom: 6px;
+    color: #222222;
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    .current-price {
+      font-size: 13px;
+      line-height: 130%;
+      font-family: BVNPro-Medium;
+      color: #B5292F;
+    }
+
+    .original-price {
+      font-size: 10px;
+      line-height: 130%;
+      font-family: BVNPro-Regular;
+      margin-left: 6px;
+      text-decoration-line: line-through;
+      color: #999999;
+    }
+  }
+
+  .voucher {
+    display: flex;
+    align-items: center;
+
+    .icn {
+      width: 12px;
+      margin-right: 6px;
+      flex-shrink: 0;
+    }
+
+    .text {
+      flex-grow: 1;
+      font-size: 10px;
+      line-height: 130%;
+      font-family: BVNPro-Medium;
+      color: #629050;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  .funcsBox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+  }
+
+  .buy-now, .add-to-card {
+    width: calc((100% - 12px) / 2);
+    font-size: 13px;
+    line-height: 100%;
+    border-radius: 25px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: BVNPro-Regular;
+  }
+
+  .buy-now {
+    background: #F7F7F7;
+    color: #666666;
+  }
+
+  .add-to-card {
+    background: #B5292F;
+    color: #FFFFFF;
+  }
+}
+
+.go-to-top {
+  margin-top: 15px;
+  margin-bottom: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .txt {
+    font-size: 12px;
+    line-height: 100%;
+    /* identical to box height, or 12px */
+    font-family: BVNPro-Regular;
+    display: block;
+    margin-right: 3px;
+    color: #A08C78;
+  }
+
+  .icn {
+    width: 12px;
+    display: block;
   }
 }
