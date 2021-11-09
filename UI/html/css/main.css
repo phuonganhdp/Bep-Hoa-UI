@@ -90,7 +90,7 @@ body {
   --colorBe: #FFE6CE;
 }
 
-.bb05, .bh-menu-list li {
+.bb05, .PopUp-detail .food-info, .bh-menu-list li {
   border-bottom: 1px solid #E7E7E7;
 }
 
@@ -99,7 +99,7 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  .bb05, .bh-menu-list li {
+  .bb05, .PopUp-detail .food-info, .bh-menu-list li {
     border-bottom: 0.5px solid #E7E7E7;
   }
 
@@ -124,6 +124,49 @@ svg {
 
 .fancybox-fx-slide-in-out.fancybox-slide--current {
   transform: translateY(0);
+}
+
+/* Custom flexbox */
+.flexBox {
+  display: flex;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.al-ct {
+  align-items: center;
+}
+
+/* Custom input number order */
+.number-order {
+  display: flex;
+  align-items: center;
+}
+.number-order span {
+  cursor: pointer;
+}
+.number-order .minus, .number-order .plus {
+  width: 28px;
+  display: block;
+}
+.number-order input {
+  margin: 0 10px;
+  height: 30px;
+  width: 38px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 140%;
+  font-family: BVNPro-Medium;
+  color: #222222;
 }
 
 @font-face {
@@ -552,6 +595,130 @@ svg {
 .go-to-top .icn {
   width: 12px;
   display: block;
+}
+
+.PopUp-detail {
+  width: 100vw;
+}
+.PopUp-detail .popup-content {
+  position: relative;
+}
+.PopUp-detail .popup-content .close-popup {
+  top: 20px;
+  left: 20px;
+  position: absolute;
+  width: 32px;
+  display: block;
+  z-index: 2;
+}
+.PopUp-detail .galleryBox {
+  position: relative;
+  z-index: 1;
+}
+.PopUp-detail .galleryBox .images-food {
+  position: relative;
+  display: block;
+  position: relative;
+}
+.PopUp-detail .galleryBox .images-food:before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  content: "";
+  z-index: 1;
+  box-sizing: border-box;
+}
+.PopUp-detail .galleryBox .images-food i {
+  width: 100%;
+  padding-top: 58.66%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+}
+.PopUp-detail .paginationBox {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  left: 20px;
+  bottom: 11px;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(30px);
+  border-radius: 29px;
+  z-index: 3;
+}
+.PopUp-detail .paginationBox .icon {
+  width: 10px;
+  display: block;
+  margin-right: 7px;
+}
+.PopUp-detail .paginationBox .swiper-pagination {
+  position: relative;
+  width: auto;
+  bottom: auto;
+  left: auto;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  line-height: 100%;
+  color: #FFFFFF;
+  font-family: "BVNPro-Medium";
+}
+.PopUp-detail .paginationBox .swiper-pagination span {
+  width: 8px;
+}
+.PopUp-detail .bh-logo {
+  position: absolute;
+  width: 46px;
+  display: block;
+  right: 20px;
+  bottom: -18px;
+  z-index: 3;
+}
+.PopUp-detail .food-info {
+  padding: 20px;
+}
+.PopUp-detail .name {
+  font-size: 19px;
+  line-height: 130%;
+  /* or 25px */
+  padding-right: 55px;
+  color: #222222;
+  font-family: BVNPro-SemiBold;
+}
+.PopUp-detail .priceBox {
+  display: flex;
+  align-items: center;
+}
+.PopUp-detail .priceBox .current-price {
+  font-size: 16px;
+  line-height: 130%;
+  font-family: BVNPro-Medium;
+  color: #B5292F;
+}
+.PopUp-detail .priceBox .original-price {
+  font-size: 11px;
+  line-height: 130%;
+  font-family: BVNPro-Regular;
+  text-decoration-line: line-through;
+  margin-left: 11px;
+  color: #999999;
+}
+
+.popup-active .fancybox-slide--html {
+  padding: 0;
+}
+.popup-active .fancybox-content {
+  padding: 0;
+  vertical-align: top;
+}
+.popup-active .fancybox-bg {
+  background: none;
 }
 
 .bh-wrapper {

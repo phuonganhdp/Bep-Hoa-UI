@@ -1,0 +1,130 @@
+.PopUp-detail {
+  width: 100vw;
+
+  .popup-content {
+    position: relative;
+
+    .close-popup {
+      top: 20px;
+      left: 20px;
+      position: absolute;
+      width: 32px;
+      display: block;
+      z-index: 2;
+    }
+
+  }
+
+  .galleryBox {
+    position: relative;
+    z-index: 1;
+
+    .images-food {
+      position: relative;
+      display: block;
+      @include img-border-gallery();
+
+      i {
+        width: 100%;
+        padding-top: 58.66%;
+        @include bg-thumb;
+      }
+    }
+  }
+
+  .paginationBox {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    left: 20px;
+    bottom: 11px;
+    padding: 6px 10px;
+    background: rgba(0, 0, 0, 0.82);
+    backdrop-filter: blur(30px);
+    border-radius: 29px;
+    z-index: 3;
+
+    .icon {
+      width: 10px;
+      display: block;
+      margin-right: 7px;
+    }
+
+    .swiper-pagination {
+      position: relative;
+      width: auto;
+      bottom: auto;
+      left: auto;
+      display: flex;
+      align-items: center;
+      font-size: 11px;
+      line-height: 100%;
+      color: #FFFFFF;
+      font-family: 'BVNPro-Medium';
+
+      span {
+        width: 8px;
+      }
+    }
+  }
+
+  .bh-logo {
+    position: absolute;
+    width: 46px;
+    display: block;
+    right: 20px;
+    bottom: -18px;
+    z-index: 3;
+  }
+
+  .food-info {
+    padding: 20px;
+    @extend .bb05;
+  }
+
+  .name {
+    font-size: 19px;
+    line-height: 130%;
+    /* or 25px */
+    padding-right: 55px;
+    color: #222222;
+    font-family: BVNPro-SemiBold;
+  }
+
+  .priceBox {
+    display: flex;
+    align-items: center;
+
+    .current-price {
+      font-size: 16px;
+      line-height: 130%;
+      font-family: BVNPro-Medium;
+      color: #B5292F;
+    }
+
+    .original-price {
+      font-size: 11px;
+      line-height: 130%;
+      font-family: BVNPro-Regular;
+      text-decoration-line: line-through;
+      margin-left: 11px;
+      color: #999999;
+    }
+  }
+
+}
+
+.popup-active {
+  .fancybox-slide--html {
+    padding: 0;
+  }
+
+  .fancybox-content {
+    padding: 0;
+    vertical-align: top;
+  }
+
+  .fancybox-bg {
+    background: none;
+  }
+}

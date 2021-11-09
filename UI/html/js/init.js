@@ -126,6 +126,49 @@
         $('.go-to-top').click(function () {
             window.scrollTo({top: 0, behavior: 'smooth'});
         })
+
+        // Plus and Minus order in PopUp Detail
+        $('.minus').click(function () {
+            var $input = $(this).parent().find('input');
+            var count = parseInt($input.val()) - 1;
+            count = count < 1 ? 1 : count;
+            $input.val(count);
+            $input.change();
+            return false;
+        });
+        $('.plus').click(function () {
+            var $input = $(this).parent().find('input');
+            $input.val(parseInt($input.val()) + 1);
+            $input.change();
+            return false;
+        });
+
+        //Swiper Gallery in Popup Detail
+        let swiperGallery = new Swiper(".swiper-gallery", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            pagination: {
+                el: ".galleryBox .swiper-pagination",
+                type: "fraction",
+            },
+        });
+
+        // Fancy Box Popup Detail
+        $('.open-popup-atc').fancybox({
+            protect: true,
+            animationDuration: 500,
+            animationEffect: 'slide-in-out',
+            touch: false,
+            smallBtn : false,
+            beforeShow: function () {
+                swiperGallery.init();
+                $('body').addClass('popup-active');
+            },
+            afterClose: function () {
+                $('body').removeClass('popup-active');
+            }
+        });
+
         if (me.windowW > 800) {
 
         } else {
