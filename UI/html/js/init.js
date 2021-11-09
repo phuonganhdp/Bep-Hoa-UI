@@ -42,7 +42,7 @@
         let me = this;
 
 
-        var swiperBannerHome = new Swiper(".swiper-hbanner", {
+        let swiperBannerHome = new Swiper(".swiper-hbanner", {
             slidesPerView: 1,
             spaceBetween: 0,
             autoplay: {
@@ -54,7 +54,7 @@
             },
         });
 
-        var swiperMenuTags = new Swiper(".menu__tags-list", {
+        let swiperMenuTags = new Swiper(".menu__tags-list", {
             slidesPerView: 'auto',
             spaceBetween: 0,
             freeMode: true,
@@ -73,17 +73,17 @@
         }
 
         function doScrolling(element, duration) {
-            var startingY = window.pageYOffset
-            var elementY = getElementY(element)
+            let startingY = window.pageYOffset
+            let elementY = getElementY(element)
             // If element is close to page's bottom then window will scroll only to some position above the element.
-            var targetY = document.body.scrollHeight - elementY < window.innerHeight ? document.body.scrollHeight - window.innerHeight : elementY
-            var diff = targetY - startingY
+            let targetY = document.body.scrollHeight - elementY < window.innerHeight ? document.body.scrollHeight - window.innerHeight : elementY
+            let diff = targetY - startingY
             // Easing function: easeInOutCubic
             // From: https://gist.github.com/gre/1650294
-            var easing = function (t) {
+            let easing = function (t) {
                 return t < .5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1
             }
-            var start
+            let start
 
             if (!diff) return
 
@@ -91,9 +91,9 @@
             window.requestAnimationFrame(function step(timestamp) {
                 if (!start) start = timestamp
                 // Elapsed miliseconds since start of scrolling.
-                var time = timestamp - start
+                let time = timestamp - start
                 // Get percent of completion in range [0, 1].
-                var percent = Math.min(time / duration, 1)
+                let percent = Math.min(time / duration, 1)
                 // Apply the easing.
                 // It can cause bad-looking slow frames in browser performance tool, so be careful.
                 percent = easing(percent)
@@ -108,7 +108,7 @@
         }
 
 
-        var tagsfilter = document.getElementsByClassName('tags-filter');
+        let tagsfilter = document.getElementsByClassName('tags-filter');
 
         for (let i = 0; i < tagsfilter.length; i++) {
             tagsfilter[i].addEventListener("click", doScrolling.bind(null, '#head-menu', 500))
@@ -129,15 +129,15 @@
 
         // Plus and Minus order in PopUp Detail
         $('.minus').click(function () {
-            var $input = $(this).parent().find('input');
-            var count = parseInt($input.val()) - 1;
+            let $input = $(this).parent().find('input');
+            let count = parseInt($input.val()) - 1;
             count = count < 1 ? 1 : count;
             $input.val(count);
             $input.change();
             return false;
         });
         $('.plus').click(function () {
-            var $input = $(this).parent().find('input');
+            let $input = $(this).parent().find('input');
             $input.val(parseInt($input.val()) + 1);
             $input.change();
             return false;
@@ -152,6 +152,11 @@
                 type: "fraction",
             },
         });
+        
+        //Show more sapo in Popup Detail
+        $('.show-more').click(function () {
+            $('.popup-detailfood-content .sapo').addClass('active')
+        });
 
         // Fancy Box Popup Detail
         $('.open-popup-atc').fancybox({
@@ -159,10 +164,10 @@
             animationDuration: 500,
             animationEffect: 'slide-in-out',
             touch: false,
-            smallBtn : false,
             beforeShow: function () {
                 swiperGallery.init();
                 $('body').addClass('popup-active');
+
             },
             afterClose: function () {
                 $('body').removeClass('popup-active');

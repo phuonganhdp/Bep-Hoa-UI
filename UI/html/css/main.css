@@ -90,20 +90,20 @@ body {
   --colorBe: #FFE6CE;
 }
 
-.bb05, .PopUp-detail .food-info, .bh-menu-list li {
+.bb05, .PopUp-detail .order-options, .PopUp-detail .food-info, .bh-menu-list li {
   border-bottom: 1px solid #E7E7E7;
 }
 
-.bt05, .bh-menu-list li:nth-child(1) {
+.bt05, .bh-menu-list li:nth-child(1), .form-opt + .form-opt {
   border-top: 1px solid #E7E7E7;
 }
 
 @media screen and (max-width: 800px) {
-  .bb05, .PopUp-detail .food-info, .bh-menu-list li {
+  .bb05, .PopUp-detail .order-options, .PopUp-detail .food-info, .bh-menu-list li {
     border-bottom: 0.5px solid #E7E7E7;
   }
 
-  .bt05, .bh-menu-list li:nth-child(1) {
+  .bt05, .bh-menu-list li:nth-child(1), .form-opt + .form-opt {
     border-top: 0.5px solid #E7E7E7;
   }
 }
@@ -165,6 +165,83 @@ svg {
   border-radius: 3px;
   font-size: 14px;
   line-height: 140%;
+  font-family: BVNPro-Medium;
+  color: #222222;
+}
+
+/* Custom checkbox options order */
+.form-opt {
+  display: block;
+}
+.form-opt + .form-opt {
+  padding-top: 15px;
+  margin-top: 15px;
+}
+.form-opt label {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-opt label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1.5px solid #000000;
+  border-radius: 3px;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.form-opt label span {
+  display: block;
+}
+.form-opt label .txt {
+  margin-right: auto;
+  margin-left: 0;
+  font-size: 13px;
+  line-height: 140%;
+  font-family: BVNPro-Regular;
+  color: #222222;
+}
+.form-opt label .price {
+  font-size: 12px;
+  line-height: 140%;
+  font-family: BVNPro-Regular;
+  text-align: right;
+  color: #666666;
+}
+.form-opt input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+.form-opt input:checked + label:before {
+  background: #B5292F;
+  border: 1.5px solid #B5292F;
+}
+.form-opt input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 13px;
+  height: 11px;
+  background-image: url("../img/checkbox-stick.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.form-opt input:checked + label .txt, .form-opt input:checked + label .price {
   font-family: BVNPro-Medium;
   color: #222222;
 }
@@ -600,16 +677,53 @@ svg {
 .PopUp-detail {
   width: 100vw;
 }
-.PopUp-detail .popup-content {
+.PopUp-detail .popup-detailfood-content {
   position: relative;
+  padding-bottom: 100px;
 }
-.PopUp-detail .popup-content .close-popup {
+.PopUp-detail .popup-detailfood-content .close-popup {
   top: 20px;
   left: 20px;
-  position: absolute;
+  position: fixed;
   width: 32px;
   display: block;
   z-index: 2;
+}
+.PopUp-detail .funcsFixed {
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 0.5px solid #A08C78;
+  padding: 12px 20px 38px;
+  display: flex;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-sizing: border-box;
+}
+.PopUp-detail .price-total .txt {
+  font-size: 10px;
+  line-height: 140%;
+  font-family: BVNPro-Regular;
+  margin-bottom: 3px;
+  color: #666666;
+}
+.PopUp-detail .price-total .numb {
+  font-size: 15px;
+  line-height: 130%;
+  font-family: BVNPro-Medium;
+  color: #222222;
+}
+.PopUp-detail .atc-btn, .PopUp-detail .buy-now {
+  display: inline-flex;
+  padding: 12px 28px;
+  font-size: 15px;
+  line-height: 100%;
+  font-family: BVNPro-Medium;
+  color: #FFFFFF;
+  background: #B5292F;
+  border-radius: 34px;
 }
 .PopUp-detail .galleryBox {
   position: relative;
@@ -709,6 +823,103 @@ svg {
   margin-left: 11px;
   color: #999999;
 }
+.PopUp-detail .sapo {
+  margin-top: 15px;
+  position: relative;
+  font-size: 14px;
+  line-height: 140%;
+  font-family: BVNPro-Regular;
+  color: #222222;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.PopUp-detail .sapo.active {
+  overflow: visible;
+  -webkit-line-clamp: unset;
+}
+.PopUp-detail .sapo.active .show-more {
+  display: none;
+}
+.PopUp-detail .sapo .show-more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+  line-height: 140%;
+  font-family: BVNPro-SemiBold;
+  background: #ffffff;
+  color: #222222;
+}
+.PopUp-detail .sapo .show-more:before {
+  content: "... ";
+  font-family: BVNPro-Regular;
+}
+.PopUp-detail .list-voucher {
+  margin-top: 22px;
+}
+.PopUp-detail .list-voucher li + li {
+  margin-top: 13px;
+}
+.PopUp-detail .list-voucher .voucher {
+  display: flex;
+}
+.PopUp-detail .list-voucher .voucher .icn {
+  margin-top: 1px;
+  width: 16px;
+  flex-shrink: 0;
+  margin-right: 14px;
+}
+.PopUp-detail .list-voucher .voucher .txt {
+  flex-grow: 1;
+  font-size: 13px;
+  line-height: 130%;
+  font-family: BVNPro-Medium;
+  color: #629050;
+}
+.PopUp-detail .order-options {
+  padding: 25px 20px;
+}
+.PopUp-detail .order-options .text {
+  font-size: 11px;
+  line-height: 100%;
+  font-family: BVNPro-SemiBold;
+  margin-bottom: 27px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #999999;
+}
+.PopUp-detail .noteBox {
+  padding: 25px 20px;
+}
+.PopUp-detail .noteBox .text {
+  font-size: 11px;
+  line-height: 100%;
+  font-family: BVNPro-SemiBold;
+  margin-bottom: 27px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #999999;
+}
+.PopUp-detail .noteBox .text-note {
+  background: #F7F7F7;
+  border-radius: 6px;
+  height: 100px;
+  width: 100%;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 13px;
+  line-height: 140%;
+  color: #222222;
+  padding: 11px 15px;
+  font-family: BVNPro-Regular;
+  box-sizing: border-box;
+}
+.PopUp-detail .noteBox .text-note::placeholder {
+  opacity: 0.5;
+}
 
 .popup-active .fancybox-slide--html {
   padding: 0;
@@ -719,6 +930,9 @@ svg {
 }
 .popup-active .fancybox-bg {
   background: none;
+}
+.popup-active .fancybox-close-small {
+  display: none;
 }
 
 .bh-wrapper {
