@@ -28,7 +28,7 @@
     </a>
 </div>
 
-<div class="PopUp-cart" id="popup-cart">
+<div class="PopUp-cart" id="popup-cart" style="display:none;">
     <div class="popup-cart-content">
         <div class="header-cart">
             <div class="heading">
@@ -54,81 +54,144 @@
                           stroke-linecap="square"/>
                 </svg>
             </a>
-            <ul class="list-order">
-                <li>
-                    <div class="order-info">
-                        <div class="od-count">1</div>
-                        <div class="od-info">
-                            <div class="name-food">Miến om cua Cà Mau ngon đỉnh của đỉnh</div>
-                            <div class="opts-list">
-                                <div class="opts">+ Thêm 1 con cua</div>
-                                <div class="opts">+ Thêm miến</div>
-                            </div>
-                            <div class="od-note">Không tương ớt, nghiều rau, bỏ riêng hành tây</div>
-                            <a href="javascript:;" class="edit-od">Sửa</a>
+
+        </div>
+        <ul class="list-order">
+            <li>
+                <div class="order-info">
+                    <div class="od-count">1</div>
+                    <div class="od-info">
+                        <div class="name-food">Miến om cua Cà Mau ngon đỉnh của đỉnh</div>
+                        <div class="opts-list">
+                            <div class="opts">+ Thêm 1 con cua</div>
+                            <div class="opts">+ Thêm miến</div>
                         </div>
-                        <div class="od-total">
-                            <div class="od-price">1.070.000</div>
-                            <a href="javascript:;" class="cancel-od">
+                        <div class="od-note">Không tương ớt, nghiều rau, bỏ riêng hành tây</div>
+                        <a href="javascript:;" class="edit-od">Sửa</a>
+                    </div>
+                    <div class="od-total">
+                        <div class="od-price">1.070.000</div>
+                        <a href="javascript:;" class="cancel-od">
                                 <span class="txt">
                                     Huỷ
                                 </span>
-                                <span class="icn">
+                            <span class="icn">
                                     <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.13797 0.862C7.01295 0.737019 6.84342 0.666809 6.66664 0.666809C6.48986 0.666809 6.32032 0.737019 6.19531 0.862L3.99997 3.05733L1.80464 0.862C1.6789 0.740561 1.5105 0.673365 1.33571 0.674884C1.16091 0.676403 0.993699 0.746516 0.870094 0.870121C0.746488 0.993726 0.676376 1.16093 0.674857 1.33573C0.673338 1.51053 0.740534 1.67893 0.861973 1.80467L3.05731 4L0.861973 6.19533C0.798299 6.25683 0.747511 6.33039 0.712572 6.41173C0.677632 6.49307 0.659242 6.58055 0.658472 6.66907C0.657703 6.75759 0.674571 6.84537 0.708092 6.9273C0.741612 7.00923 0.791114 7.08367 0.853709 7.14626C0.916304 7.20886 0.990739 7.25836 1.07267 7.29188C1.1546 7.3254 1.24239 7.34227 1.33091 7.3415C1.41943 7.34073 1.50691 7.32234 1.58824 7.2874C1.66958 7.25246 1.74314 7.20167 1.80464 7.138L3.99997 4.94267L6.19531 7.138C6.32104 7.25944 6.48944 7.32663 6.66424 7.32512C6.83904 7.3236 7.00625 7.25348 7.12985 7.12988C7.25346 7.00627 7.32357 6.83907 7.32509 6.66427C7.32661 6.48947 7.25941 6.32107 7.13797 6.19533L4.94264 4L7.13797 1.80467C7.26295 1.67965 7.33316 1.51011 7.33316 1.33333C7.33316 1.15656 7.26295 0.987019 7.13797 0.862Z"
                                               fill="#999999"/>
                                     </svg>
                                 </span>
-                            </a>
-                        </div>
+                        </a>
                     </div>
-                </li>
-                <li>
-                    <div class="order-info">
-                        <div class="od-count">4</div>
-                        <div class="od-info">
-                            <div class="name-food">Miến om cua Cà Mau ngon đỉnh của đỉnh</div>
-                            <div class="opts-list">
-                                <div class="opts">+ Thêm 1 con cua</div>
-                                <div class="opts">+ Thêm miến</div>
-                            </div>
-                            <div class="od-note">Không tương ớt, nghiều rau, bỏ riêng hành tây</div>
-                            <a href="javascript:;" class="edit-od">Sửa</a>
+                </div>
+            </li>
+            <li>
+                <div class="order-info">
+                    <div class="od-count">1</div>
+                    <div class="od-info">
+                        <div class="name-food">Miến om cua Cà Mau ngon đỉnh của đỉnh</div>
+                        <div class="opts-list">
+                            <div class="opts">+ Thêm 1 con cua</div>
                         </div>
-                        <div class="od-total">
-                            <div class="od-price">1.070.000</div>
-                            <a href="javascript:;" class="cancel-od">
+                        <div class="od-note">Không tương ớt, nghiều rau, bỏ riêng hành tây</div>
+                        <a href="javascript:;" class="edit-od">Sửa</a>
+                    </div>
+                    <div class="od-total">
+                        <div class="od-price">1.070.000</div>
+                        <a href="javascript:;" class="cancel-od">
                                 <span class="txt">
                                     Huỷ
                                 </span>
-                                <span class="icn">
+                            <span class="icn">
                                     <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.13797 0.862C7.01295 0.737019 6.84342 0.666809 6.66664 0.666809C6.48986 0.666809 6.32032 0.737019 6.19531 0.862L3.99997 3.05733L1.80464 0.862C1.6789 0.740561 1.5105 0.673365 1.33571 0.674884C1.16091 0.676403 0.993699 0.746516 0.870094 0.870121C0.746488 0.993726 0.676376 1.16093 0.674857 1.33573C0.673338 1.51053 0.740534 1.67893 0.861973 1.80467L3.05731 4L0.861973 6.19533C0.798299 6.25683 0.747511 6.33039 0.712572 6.41173C0.677632 6.49307 0.659242 6.58055 0.658472 6.66907C0.657703 6.75759 0.674571 6.84537 0.708092 6.9273C0.741612 7.00923 0.791114 7.08367 0.853709 7.14626C0.916304 7.20886 0.990739 7.25836 1.07267 7.29188C1.1546 7.3254 1.24239 7.34227 1.33091 7.3415C1.41943 7.34073 1.50691 7.32234 1.58824 7.2874C1.66958 7.25246 1.74314 7.20167 1.80464 7.138L3.99997 4.94267L6.19531 7.138C6.32104 7.25944 6.48944 7.32663 6.66424 7.32512C6.83904 7.3236 7.00625 7.25348 7.12985 7.12988C7.25346 7.00627 7.32357 6.83907 7.32509 6.66427C7.32661 6.48947 7.25941 6.32107 7.13797 6.19533L4.94264 4L7.13797 1.80467C7.26295 1.67965 7.33316 1.51011 7.33316 1.33333C7.33316 1.15656 7.26295 0.987019 7.13797 0.862Z"
                                               fill="#999999"/>
                                     </svg>
                                 </span>
-                            </a>
-                        </div>
+                        </a>
                     </div>
-                </li>
-                <li>
-                    <div class="order-info">
-                        <div class="od-count">1</div>
-                        <div class="od-info">
-                            <div class="name-food"></div>
-                            <div class="opts-list">
-                                <div class="opts"></div>
-                                <div class="opts"></div>
-                            </div>
-                            <div class="od-note"></div>
-                            <a href="javascript:;" class="edit-od"></a>
+                </div>
+            </li>
+            <li>
+                <div class="order-info">
+                    <div class="od-count">5</div>
+                    <div class="od-info">
+                        <div class="name-food">Miến om cua Cà Mau ngon đỉnh của đỉnh</div>
+                        <div class="opts-list">
+                            <div class="opts">+ Thêm 1 con cua</div>
                         </div>
-                        <div class="od-total"></div>
+                        <a href="javascript:;" class="edit-od">Sửa</a>
                     </div>
-                </li>
-            </ul>
+                    <div class="od-total">
+                        <div class="od-price">570.000</div>
+                        <a href="javascript:;" class="cancel-od">
+                                <span class="txt">
+                                    Huỷ
+                                </span>
+                            <span class="icn">
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.13797 0.862C7.01295 0.737019 6.84342 0.666809 6.66664 0.666809C6.48986 0.666809 6.32032 0.737019 6.19531 0.862L3.99997 3.05733L1.80464 0.862C1.6789 0.740561 1.5105 0.673365 1.33571 0.674884C1.16091 0.676403 0.993699 0.746516 0.870094 0.870121C0.746488 0.993726 0.676376 1.16093 0.674857 1.33573C0.673338 1.51053 0.740534 1.67893 0.861973 1.80467L3.05731 4L0.861973 6.19533C0.798299 6.25683 0.747511 6.33039 0.712572 6.41173C0.677632 6.49307 0.659242 6.58055 0.658472 6.66907C0.657703 6.75759 0.674571 6.84537 0.708092 6.9273C0.741612 7.00923 0.791114 7.08367 0.853709 7.14626C0.916304 7.20886 0.990739 7.25836 1.07267 7.29188C1.1546 7.3254 1.24239 7.34227 1.33091 7.3415C1.41943 7.34073 1.50691 7.32234 1.58824 7.2874C1.66958 7.25246 1.74314 7.20167 1.80464 7.138L3.99997 4.94267L6.19531 7.138C6.32104 7.25944 6.48944 7.32663 6.66424 7.32512C6.83904 7.3236 7.00625 7.25348 7.12985 7.12988C7.25346 7.00627 7.32357 6.83907 7.32509 6.66427C7.32661 6.48947 7.25941 6.32107 7.13797 6.19533L4.94264 4L7.13797 1.80467C7.26295 1.67965 7.33316 1.51011 7.33316 1.33333C7.33316 1.15656 7.26295 0.987019 7.13797 0.862Z"
+                                              fill="#999999"/>
+                                    </svg>
+                                </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="order-info">
+                    <div class="od-count">4</div>
+                    <div class="od-info">
+                        <div class="name-food">Cocacola</div>
+
+                        <a href="javascript:;" class="edit-od">Sửa</a>
+                    </div>
+                    <div class="od-total">
+                        <div class="od-price">170.000</div>
+                        <a href="javascript:;" class="cancel-od">
+                                <span class="txt">
+                                    Huỷ
+                                </span>
+                            <span class="icn">
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.13797 0.862C7.01295 0.737019 6.84342 0.666809 6.66664 0.666809C6.48986 0.666809 6.32032 0.737019 6.19531 0.862L3.99997 3.05733L1.80464 0.862C1.6789 0.740561 1.5105 0.673365 1.33571 0.674884C1.16091 0.676403 0.993699 0.746516 0.870094 0.870121C0.746488 0.993726 0.676376 1.16093 0.674857 1.33573C0.673338 1.51053 0.740534 1.67893 0.861973 1.80467L3.05731 4L0.861973 6.19533C0.798299 6.25683 0.747511 6.33039 0.712572 6.41173C0.677632 6.49307 0.659242 6.58055 0.658472 6.66907C0.657703 6.75759 0.674571 6.84537 0.708092 6.9273C0.741612 7.00923 0.791114 7.08367 0.853709 7.14626C0.916304 7.20886 0.990739 7.25836 1.07267 7.29188C1.1546 7.3254 1.24239 7.34227 1.33091 7.3415C1.41943 7.34073 1.50691 7.32234 1.58824 7.2874C1.66958 7.25246 1.74314 7.20167 1.80464 7.138L3.99997 4.94267L6.19531 7.138C6.32104 7.25944 6.48944 7.32663 6.66424 7.32512C6.83904 7.3236 7.00625 7.25348 7.12985 7.12988C7.25346 7.00627 7.32357 6.83907 7.32509 6.66427C7.32661 6.48947 7.25941 6.32107 7.13797 6.19533L4.94264 4L7.13797 1.80467C7.26295 1.67965 7.33316 1.51011 7.33316 1.33333C7.33316 1.15656 7.26295 0.987019 7.13797 0.862Z"
+                                              fill="#999999"/>
+                                    </svg>
+                                </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+        <div class="footer-cart">
+            <div class="total-bill">
+                <div class="count">
+                    <div class="text">Tiền hàng</div>
+                    <div class="quantity">6 món</div>
+                </div>
+                <div class="price-bill">
+                    1.460.000đ
+                </div>
+            </div>
+            <div class="funcsBtn">
+                <a href="javascript:;" data-fancybox-close class="add-more">
+                    <span class="icn">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.25 5.25H6.75V0.75C6.75 0.3 6.45 0 6 0C5.55 0 5.25 0.3 5.25 0.75V5.25H0.75C0.3 5.25 0 5.55 0 6C0 6.45 0.3 6.75 0.75 6.75H5.25V11.25C5.25 11.7 5.55 12 6 12C6.45 12 6.75 11.7 6.75 11.25V6.75H11.25C11.7 6.75 12 6.45 12 6C12 5.55 11.7 5.25 11.25 5.25Z"
+                                  fill="#222222"/>
+                        </svg>
+                    </span>
+                    <span class="txt">
+                        Thêm món
+                    </span>
+                </a>
+                <a href="javascript:;" class="payment">Thanh toán</a>
+            </div>
         </div>
     </div>
 </div>

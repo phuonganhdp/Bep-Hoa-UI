@@ -50,6 +50,9 @@
   }
 
   .atc-btn, .buy-now {
+    &.save-edit{
+      background: #222222;
+    }
     display: inline-flex;
     padding: 12px 28px;
     font-size: 15px;

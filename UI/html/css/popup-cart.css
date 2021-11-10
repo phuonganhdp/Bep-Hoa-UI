@@ -1,0 +1,18 @@
+/* Error: The target selector was not found.
+ * Use "@extend .bb05 !optional" to avoid this error.
+ *    ,
+ * 51 |       @extend .bb05;
+ *    |       ^^^^^^^^^^^^^
+ *    '
+ *   popup-cart.scss 51:7  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: The target selector was not found.\aUse "@extend .bb05 !optional" to avoid this error.\a    \2577 \a 51 \2502        @extend .bb05;\d\a    \2502        ^^^^^^^^^^^^^\a    \2575 \a   popup-cart.scss 51:7  root stylesheet';
+}

@@ -29,6 +29,18 @@
     },
 
     common: function () {
+        // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+        let vh = window.innerHeight * 0.01;
+        // Then we set the value in the --vh custom property to the root of the document
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+        // We listen to the resize event
+        window.addEventListener('resize', () => {
+            // We execute the same script as before
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        });
+
         let me = this;
 
         if (me.windowW > 800) {
@@ -44,7 +56,7 @@
 
         let swiperBannerHome = new Swiper(".swiper-hbanner", {
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween: 10,
             autoplay: {
                 delay: 3000
             },
@@ -151,24 +163,10 @@
         $('.show-more').click(function () {
             $('.popup-detailfood-content .sapo').addClass('active')
         });
-        //
-        // // Fancy Box Popup Detail
-        // $('.open-popup-atc').fancybox({
-        //     protect: true,
-        //     animationDuration: 500,
-        //     animationEffect: 'slide-in-out',
-        //     touch: false,
-        //     beforeShow: function () {
-        //         swiperGallery.init();
-        //         $('body').addClass('popup-active');
-        //
-        //     },
-        //     afterClose: function () {
-        //         $('body').removeClass('popup-active');
-        //     }
-        // });
+
+        // Fancy Box Popup Detail
         $('.open-popup-atc').off('click').click(function () {
-            // Fancy Box Popup Detail
+
 
             $.fancybox.open({
                 src: '#popup-detail-atc',
@@ -196,6 +194,33 @@
                     },
                     afterClose: function () {
                         $('body').removeClass('popup-active');
+                        swiperGallery.destroy();
+                    }
+                },
+            });
+        });
+
+        $('.open-popup-cart').off('click').click(function () {
+
+
+            $.fancybox.open({
+                src: '#popup-cart',
+                type: 'inline',
+                opts: {
+                    protect: true,
+                    animationDuration: 500,
+                    animationEffect: 'slide-in-out',
+                    touch: false,
+                    beforeShow: function () {
+                        $('body').addClass('popup-cart-active');
+                    },
+                    afterShow: function () {
+
+
+
+                    },
+                    afterClose: function () {
+                        $('body').removeClass('popup-cart-active');
                     }
                 },
             });

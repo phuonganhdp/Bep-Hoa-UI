@@ -4,7 +4,7 @@ svg {
   display: block;
 }
 
-/* Custom animation */
+/* Custom animation fancybox */
 .fancybox-fx-slide-in-out.fancybox-slide--previous {
   transform: translateY(100%);
 }
@@ -15,6 +15,18 @@ svg {
 
 .fancybox-fx-slide-in-out.fancybox-slide--current {
   transform: translateY(0);
+}
+
+.fancybox-fx-slide-in-out-right.fancybox-slide--previous {
+  transform: translateX(100%);
+}
+
+.fancybox-fx-slide-in-out-right.fancybox-slide--next {
+  transform: translateX(100%);
+}
+
+.fancybox-fx-slide-in-out-right.fancybox-slide--current {
+  transform: translateX(0);
 }
 
 /* Custom flexbox */
