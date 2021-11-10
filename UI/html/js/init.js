@@ -144,36 +144,62 @@
         });
 
         //Swiper Gallery in Popup Detail
-        let swiperGallery = new Swiper(".swiper-gallery", {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            pagination: {
-                el: ".galleryBox .swiper-pagination",
-                type: "fraction",
-            },
-        });
-        
+        let swiperGallery = null;
+
+
         //Show more sapo in Popup Detail
         $('.show-more').click(function () {
             $('.popup-detailfood-content .sapo').addClass('active')
         });
+        //
+        // // Fancy Box Popup Detail
+        // $('.open-popup-atc').fancybox({
+        //     protect: true,
+        //     animationDuration: 500,
+        //     animationEffect: 'slide-in-out',
+        //     touch: false,
+        //     beforeShow: function () {
+        //         swiperGallery.init();
+        //         $('body').addClass('popup-active');
+        //
+        //     },
+        //     afterClose: function () {
+        //         $('body').removeClass('popup-active');
+        //     }
+        // });
+        $('.open-popup-atc').off('click').click(function () {
+            // Fancy Box Popup Detail
 
-        // Fancy Box Popup Detail
-        $('.open-popup-atc').fancybox({
-            protect: true,
-            animationDuration: 500,
-            animationEffect: 'slide-in-out',
-            touch: false,
-            beforeShow: function () {
-                swiperGallery.init();
-                $('body').addClass('popup-active');
+            $.fancybox.open({
+                src: '#popup-detail-atc',
+                type: 'inline',
+                opts: {
+                    protect: true,
+                    animationDuration: 500,
+                    animationEffect: 'slide-in-out',
+                    touch: false,
+                    beforeShow: function () {
+                        $('body').addClass('popup-active');
+                    },
+                    afterShow: function () {
+                        swiperGallery = new Swiper(".swiper-gallery", {
+                            slidesPerView: 1,
+                            spaceBetween: 0,
+                            pagination: {
+                                el: ".galleryBox .swiper-pagination",
+                                type: "fraction",
+                            },
+                            initialSlide: 0,
+                        });
 
-            },
-            afterClose: function () {
-                $('body').removeClass('popup-active');
-            }
+
+                    },
+                    afterClose: function () {
+                        $('body').removeClass('popup-active');
+                    }
+                },
+            });
         });
-
         if (me.windowW > 800) {
 
         } else {

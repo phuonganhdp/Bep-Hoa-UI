@@ -189,7 +189,6 @@
         margin-left: 8px;
       }
 
-
       .tags-filter {
         &.active {
           background: #B5292F;
@@ -241,7 +240,6 @@
     &:nth-child(1) {
       @extend .bt05;
     }
-
 
     @extend .bb05;
     padding: 15px 20px;
@@ -401,5 +399,92 @@
   .icn {
     width: 12px;
     display: block;
+  }
+}
+
+.bh-main-footer-fixed {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0 20px 27px;
+  z-index: 99;
+  background: linear-gradient(1.98deg, rgba(255, 255, 255, 0.95) 40%, rgba(255, 255, 255, 0) 98.33%);
+  .bh-cart-total {
+    position: relative;
+    width: calc(100% - 65px);
+    background: rgba(241, 250, 237, 0.9);
+    border: 1px solid #B0C7A7;
+    box-sizing: border-box;
+    backdrop-filter: blur(30px);
+    border-radius: 29px;
+    padding: 11px 14px;
+    display: flex;
+    align-items: center;
+    .icon {
+      width: 22px;
+      flex-shrink: 0;
+      margin-right: 9px;
+    }
+    .total {
+      flex-grow: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      line-height: 100%;
+      font-family: BVNPro-SemiBold;
+    }
+    b {
+      color: #629050;
+    }
+    .quantity {
+      margin-left: 6px;
+      margin-right: auto;
+      color: #000000;
+      font-family: BVNPro-Regular;
+    }
+    .price-total {
+      color: #111111;
+      font-size: 15px;
+    }
+    .noti-atc {
+      &.active{
+        opacity: 1;
+        visibility: visible;
+      }
+      transition: .3s ease;
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      left: 0;
+      top: -50px;
+      width: 335px;
+      padding: 10px 11px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      background: #F1FAED;
+      border: 1px solid rgba(98, 144, 80, 0.5);
+      box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      .icn {
+        width: 18px;
+        display: block;
+        margin-right: 9px;
+      }
+      .txt {
+        font-size: 13px;
+        line-height: 100%;
+        font-family: BVNPro-Regular;
+        display: block;
+        color: #629050;
+
+      }
+    }
+  }
+  .open-mess {
+    width: 42px;
   }
 }
