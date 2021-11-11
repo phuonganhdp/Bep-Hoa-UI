@@ -120,7 +120,7 @@
     letter-spacing: 0.4em;
     text-transform: uppercase;
     background: #FFFFFF;
-    color: #B5292F;
+    color: var(--colorRed);
   }
 
   .call-to {
@@ -191,7 +191,7 @@
 
       .tags-filter {
         &.active {
-          background: #B5292F;
+          background: var(--colorRed);
           color: #FFFFFF;
         }
 
@@ -314,7 +314,7 @@
       font-size: 13px;
       line-height: 130%;
       font-family: BVNPro-Medium;
-      color: #B5292F;
+      color: var(--colorRed);
     }
 
     .original-price {
@@ -374,7 +374,7 @@
   }
 
   .add-to-card {
-    background: #B5292F;
+    background: var(--colorRed);
     color: #FFFFFF;
   }
 }

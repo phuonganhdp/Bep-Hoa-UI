@@ -63,7 +63,7 @@
       font-size: 12px;
       line-height: 100%;
       font-family: BVNPro-Regular;
-      color: #B5292F;
+      color: var(--colorRed);
 
     }
 
@@ -112,7 +112,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #B5292F;
+      background: var(--colorRed);
       box-sizing: border-box;
       height: 40px;
       border-radius: 6px;
@@ -163,7 +163,7 @@
   .od-count {
     width: 32px;
     height: 26px;
-    background: #B5292F;
+    background: var(--colorRed);
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -223,7 +223,7 @@
     line-height: 100%;
     font-family: BVNPro-SemiBold;
     display: inline-block;
-    color: #B5292F;
+    color: var(--colorRed);
   }
 
   .od-price {

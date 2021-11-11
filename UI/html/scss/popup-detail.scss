@@ -59,7 +59,7 @@
     line-height: 100%;
     font-family: BVNPro-Medium;
     color: #FFFFFF;
-    background: #B5292F;
+    background: var(--colorRed);
     border-radius: 34px;
   }
 
@@ -147,7 +147,7 @@
       font-size: 16px;
       line-height: 130%;
       font-family: BVNPro-Medium;
-      color: #B5292F;
+      color: var(--colorRed);
     }
 
     .original-price {

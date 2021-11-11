@@ -33,11 +33,12 @@ input {
 
 }
 
+
 input[type=text],
 input[type=number],
 input[type=email],
 input[type=password],
-textarea {
+textarea, select {
   /* Remove First */
   -webkit-appearance: none;
   -moz-appearance: none;

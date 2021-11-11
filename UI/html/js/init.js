@@ -79,7 +79,6 @@
         $(".tagBox").sticky({topSpacing: 60});
 
         // Start Auto Scroll top menu when clicked filter
-
         function getElementY(query) {
             return window.pageYOffset + document.querySelector(query).getBoundingClientRect().top
         }
@@ -125,6 +124,7 @@
         for (let i = 0; i < tagsfilter.length; i++) {
             tagsfilter[i].addEventListener("click", doScrolling.bind(null, '#head-menu', 500))
         }
+        // End Auto Scroll top menu when clicked filter
 
         $('.tags-filter').each(function () {
             $(this).click(function () {
@@ -274,7 +274,7 @@
             })
         });
 
-        //Input Hour Order
+        //Start Input Hour Order
         $(".hh").blur(function () {
             if ($(this).val() >= 24)
                 $(this).val($(this).val() % 24);
@@ -314,26 +314,19 @@
             $(this).parent().removeClass("invalid").removeClass("valid");
         });
 
-        function getTime(x) {
-            var t = $(".timepicker." + x).find(".hh").val() + ":" + $(".timepicker." + x).find(".mm").val();
-            var isValid = /^([0-1]?[0-9]|2[0-4]):([0-5][0-9])(:[0-5][0-9])?$/.test(t);
-            var res = t;
-            if (!isValid)
-                res = null;
-            return res;
-        }
-
-
-        function setTime(x, t) {
-            $(".timepicker." + x).children(".hh").val(t.substring(0, 2));
-            $(".timepicker." + x).children(".mm").val(t.substring(3, 5));
-
-        }
-
-
         $("html").on('input', ".input-hour", function () {
             $(this).val($(this).val().replace(/[^0-9.]/g, ""));
         });
+        //End Input Hour Order
+
+        //check Payment type
+        $('.payment-type').each(function () {
+            $(this).click(function () {
+                $(".payment-type").removeClass("active");
+                $(this).addClass("active");
+            })
+        });
+
 
         if (me.windowW > 800) {
 

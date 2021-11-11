@@ -140,8 +140,8 @@ svg {
 
   input {
     &:checked + label:before {
-      background: #B5292F;
-      border: 1.5px solid #B5292F;
+      background: var(--colorRed);
+      border: 1.5px solid var(--colorRed);
     }
 
     &:checked + label:after {
@@ -206,7 +206,7 @@ svg {
   }
   [type="radio"]:checked + label:before {
 
-    border: 1.5px solid #B5292F;
+    border: 1.5px solid var(--colorRed);
 
   }
   [type="radio"]:checked + label:after,
@@ -214,7 +214,7 @@ svg {
     content: '';
     width: 10px;
     height: 10px;
-    background: #B5292F;
+    background: var(--colorRed);
     position: absolute;
     top: 5px;
     left: 5px;

@@ -28,7 +28,7 @@
     </a>
 </div>
 
-<div class="Popup-checkout" id="open-popup-checkout">
+<div class="Popup-checkout" id="open-popup-checkout" style="display:none;">
     <div class="popup-content">
         <div class="header">
             <a href="javascript:;" data-fancybox-close class="back-btn">
@@ -166,6 +166,277 @@
                 </div>
             </div>
         </div>
+        <div class="infoBox">
+            <div class="title">
+                Thông tin người nhận
+            </div>
+            <div class="form-input-user">
+                <div class="form-input">
+                    <div class="input-user">
+                        <div class="icn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 8C10.2091 8 12 6.20914 12 4C12 1.79086 10.2091 0 8 0C5.79086 0 4 1.79086 4 4C4 6.20914 5.79086 8 8 8Z"
+                                      fill="#666666"/>
+                                <path d="M16 13.2C16.0017 12.8172 15.8928 12.442 15.6865 12.1196C15.4802 11.7971 15.1853 11.541 14.837 11.382C12.6811 10.4439 10.351 9.9729 8.00002 10C5.64902 9.9729 3.31892 10.4439 1.16302 11.382C0.814771 11.541 0.519799 11.7971 0.313505 12.1196C0.107211 12.442 -0.00163935 12.8172 1.86626e-05 13.2V16H16V13.2Z"
+                                      fill="#666666"/>
+                            </svg>
+                        </div>
+                        <input type="text" class="input-user-info" placeholder="Tên người nhận">
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class="input-user">
+                        <div class="icn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.1669 11.0211L10.4499 9.81407C10.1676 9.68782 9.85142 9.65859 9.55076 9.73096C9.25009 9.80332 8.98184 9.9732 8.78789 10.2141L8.00489 11.1931C6.72119 10.3693 5.62844 9.28067 4.79989 8.00007L5.77889 7.21707C6.01955 7.02318 6.18928 6.75511 6.26164 6.45466C6.33399 6.15421 6.3049 5.83826 6.17889 5.55607L4.97889 2.83207C4.84427 2.52875 4.60628 2.28311 4.30737 2.13897C4.00846 1.99482 3.66806 1.96155 3.34689 2.04507L1.04689 2.64507C0.713588 2.73182 0.423953 2.93838 0.233378 3.22526C0.0428019 3.51214 -0.0353403 3.8592 0.0138944 4.20007C0.442494 7.17478 1.82295 9.93069 3.94865 12.0553C6.07435 14.1799 8.83096 15.559 11.8059 15.9861C12.1468 16.0343 12.4936 15.9553 12.7799 15.764C13.0662 15.5726 13.272 15.2825 13.3579 14.9491L13.9579 12.6491C14.0413 12.328 14.0075 11.9876 13.8625 11.6892C13.7176 11.3908 13.4709 11.1539 13.1669 11.0211Z"
+                                      fill="#666666"/>
+                                <path d="M10 8C10 8.26522 10.1054 8.51957 10.2929 8.70711C10.4804 8.89464 10.7348 9 11 9C11.2652 9 11.5196 8.89464 11.7071 8.70711C11.8946 8.51957 12 8.26522 12 8C12 6.93913 11.5786 5.92172 10.8284 5.17157C10.0783 4.42143 9.06087 4 8 4C7.73478 4 7.48043 4.10536 7.29289 4.29289C7.10536 4.48043 7 4.73478 7 5C7 5.26522 7.10536 5.51957 7.29289 5.70711C7.48043 5.89464 7.73478 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z"
+                                      fill="#666666"/>
+                                <path d="M8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1C7 1.26522 7.10536 1.51957 7.29289 1.70711C7.48043 1.89464 7.73478 2 8 2C9.59081 2.00159 11.116 2.63424 12.2409 3.75911C13.3658 4.88399 13.9984 6.40919 14 8C14 8.26522 14.1054 8.51957 14.2929 8.70711C14.4804 8.89464 14.7348 9 15 9C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C15.9976 5.879 15.154 3.84555 13.6542 2.34578C12.1544 0.846002 10.121 0.00238211 8 0V0Z"
+                                      fill="#666666"/>
+                            </svg>
+                        </div>
+                        <input type="text" class="input-user-info" placeholder="Số điện thoại nhận hàng">
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class="input-user">
+                        <input type="text" class="input-user-info" placeholder="Địa chỉ">
+
+                        <!-- add class active open autofill box-->
+                        <div class="autofill-box">
+                            <ul class="list-address">
+                                <li>
+                                    <a href="javascript:;" class="address-used">C32-TT9 Văn Quán, Hà Đông, Hà Nội</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="address-used">85 vũ trọng phụng, Thanh Xuân, Hà
+                                        Nội</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class="input-user">
+                        <div class="city">Hà Nội</div>
+                        <select name="" id="" placeholder="Chọn Quận hoặc Huyện" required>
+                            <option value selected disabled>Chọn Quận hoặc Huyện</option>
+                            <option value="2">Thanh Xuân</option>
+                            <option value="3">Đống Đa</option>
+                            <option value="4">Hà Đông</option>
+                            <option value="5">Hoàn Kiếm</option>
+                            <option value="6">Ba Đình</option>
+                            <option value="7">Hai Bà Trưng</option>
+                        </select>
+                        <a href="javascript:;" class="trigger-select">Lựa chọn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="infoBox">
+            <div class="title">
+                Thông tin người nhận
+            </div>
+            <div class="form-input-user">
+                <div class="form-input">
+                    <div class="input-user">
+                        <div class="icn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 8C10.2091 8 12 6.20914 12 4C12 1.79086 10.2091 0 8 0C5.79086 0 4 1.79086 4 4C4 6.20914 5.79086 8 8 8Z"
+                                      fill="#666666"/>
+                                <path d="M16 13.2C16.0017 12.8172 15.8928 12.442 15.6865 12.1196C15.4802 11.7971 15.1853 11.541 14.837 11.382C12.6811 10.4439 10.351 9.9729 8.00002 10C5.64902 9.9729 3.31892 10.4439 1.16302 11.382C0.814771 11.541 0.519799 11.7971 0.313505 12.1196C0.107211 12.442 -0.00163935 12.8172 1.86626e-05 13.2V16H16V13.2Z"
+                                      fill="#666666"/>
+                            </svg>
+                        </div>
+                        <input type="text" class="input-user-info" placeholder="Tên người nhận">
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class="input-user">
+                        <div class="icn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.1669 11.0211L10.4499 9.81407C10.1676 9.68782 9.85142 9.65859 9.55076 9.73096C9.25009 9.80332 8.98184 9.9732 8.78789 10.2141L8.00489 11.1931C6.72119 10.3693 5.62844 9.28067 4.79989 8.00007L5.77889 7.21707C6.01955 7.02318 6.18928 6.75511 6.26164 6.45466C6.33399 6.15421 6.3049 5.83826 6.17889 5.55607L4.97889 2.83207C4.84427 2.52875 4.60628 2.28311 4.30737 2.13897C4.00846 1.99482 3.66806 1.96155 3.34689 2.04507L1.04689 2.64507C0.713588 2.73182 0.423953 2.93838 0.233378 3.22526C0.0428019 3.51214 -0.0353403 3.8592 0.0138944 4.20007C0.442494 7.17478 1.82295 9.93069 3.94865 12.0553C6.07435 14.1799 8.83096 15.559 11.8059 15.9861C12.1468 16.0343 12.4936 15.9553 12.7799 15.764C13.0662 15.5726 13.272 15.2825 13.3579 14.9491L13.9579 12.6491C14.0413 12.328 14.0075 11.9876 13.8625 11.6892C13.7176 11.3908 13.4709 11.1539 13.1669 11.0211Z"
+                                      fill="#666666"/>
+                                <path d="M10 8C10 8.26522 10.1054 8.51957 10.2929 8.70711C10.4804 8.89464 10.7348 9 11 9C11.2652 9 11.5196 8.89464 11.7071 8.70711C11.8946 8.51957 12 8.26522 12 8C12 6.93913 11.5786 5.92172 10.8284 5.17157C10.0783 4.42143 9.06087 4 8 4C7.73478 4 7.48043 4.10536 7.29289 4.29289C7.10536 4.48043 7 4.73478 7 5C7 5.26522 7.10536 5.51957 7.29289 5.70711C7.48043 5.89464 7.73478 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z"
+                                      fill="#666666"/>
+                                <path d="M8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1C7 1.26522 7.10536 1.51957 7.29289 1.70711C7.48043 1.89464 7.73478 2 8 2C9.59081 2.00159 11.116 2.63424 12.2409 3.75911C13.3658 4.88399 13.9984 6.40919 14 8C14 8.26522 14.1054 8.51957 14.2929 8.70711C14.4804 8.89464 14.7348 9 15 9C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C15.9976 5.879 15.154 3.84555 13.6542 2.34578C12.1544 0.846002 10.121 0.00238211 8 0V0Z"
+                                      fill="#666666"/>
+                            </svg>
+                        </div>
+                        <input type="text" class="input-user-info" placeholder="Số điện thoại nhận hàng">
+                    </div>
+                </div>
+            </div>
+            <div class="remind-user">
+                <div class="text">Để đảm bảo món ăn có chất lượng tốt nhất!</div>
+                <div class="images">
+                    <img src="img/remind-user.png" alt="">
+                </div>
+                <div class="remind-text">
+                    Quý thực khách <br>
+                    <span>
+                    trước khi đến lấy hàng <br>
+                    vui lòng gọi trước tối thiểu 30 phút <br>
+                    </span>
+                    để bếp hoa kịp chuẩn bị
+                </div>
+            </div>
+        </div>
+        <div class="infoBox">
+            <div class="title">
+                Hình thức thanh toán
+            </div>
+            <div class="payment-box">
+                <ul class="list-payment">
+                    <li>
+                        <a href="javascript:;" class="payment-type cod active">
+                            <span class="icn">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.875 4.5H1.125C0.45 4.5 0 4.95 0 5.625V16.875C0 17.55 0.45 18 1.125 18H16.875C17.55 18 18 17.55 18 16.875V5.625C18 4.95 17.55 4.5 16.875 4.5ZM12.4875 15.75H5.5125C5.0625 14.175 3.825 12.9375 2.25 12.4875V10.0125C3.825 9.5625 5.0625 8.325 5.5125 6.75H12.6C13.05 8.325 14.2875 9.5625 15.8625 10.0125V12.6C14.175 12.9375 12.9375 14.175 12.4875 15.75Z"
+                                          fill="#356721"/>
+                                    <path d="M9 13.5C10.2426 13.5 11.25 12.4926 11.25 11.25C11.25 10.0074 10.2426 9 9 9C7.75736 9 6.75 10.0074 6.75 11.25C6.75 12.4926 7.75736 13.5 9 13.5Z"
+                                          fill="#356721"/>
+                                    <path d="M15.75 0H2.25V2.25H15.75V0Z" fill="#356721"/>
+                                </svg>
+                            </span>
+                            <span class="txt">Thanh toán khi nhận hàng</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="payment-type momo">
+                            <span class="icn">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M2 0C0.895431 0 0 0.89543 0 2V16C0 17.1046 0.89543 18 2 18H16C17.1046 18 18 17.1046 18 16V2C18 0.895431 17.1046 0 16 0H2ZM10.0267 4.9325C10.0267 3.31616 11.3683 2 13.0133 2C14.6583 2 16 3.31616 16 4.9325C16 6.54885 14.6583 7.86501 13.0133 7.86501C11.3683 7.86501 10.0267 6.54885 10.0267 4.9325ZM11.7417 4.9325C11.7417 5.62522 12.3133 6.1794 13.0133 6.1794C13.7133 6.1794 14.285 5.62522 14.285 4.9325C14.285 4.23979 13.7133 3.68561 13.0133 3.68561C12.3133 3.68561 11.7417 4.25133 11.7417 4.9325ZM9.16333 7.87655V4.20515C9.16333 2.98135 8.16 2 6.92333 2C6.42167 2 5.955 2.16163 5.58167 2.43872C5.20833 2.16163 4.74167 2 4.24 2C3.00333 2 2 2.98135 2 4.20515V7.86501H3.715V4.18206C3.715 3.90497 3.93667 3.68561 4.21667 3.68561C4.49667 3.68561 4.71833 3.90497 4.71833 4.18206V7.86501H6.445V4.18206C6.445 3.90497 6.66667 3.68561 6.94667 3.68561C7.22667 3.68561 7.44833 3.90497 7.44833 4.18206V7.87655H9.16333ZM10.0267 12.0675C10.0267 10.4512 11.3683 9.13499 13.0133 9.13499C14.6583 9.13499 16 10.4396 16 12.0675C16 13.6838 14.6583 15 13.0133 15C11.3683 15 10.0267 13.6838 10.0267 12.0675ZM11.7417 12.0675C11.7417 12.7602 12.3133 13.3144 13.0133 13.3144C13.7133 13.3144 14.285 12.7487 14.285 12.0675C14.285 11.3748 13.7133 10.8206 13.0133 10.8206C12.3133 10.8206 11.7417 11.3863 11.7417 12.0675ZM9.16333 15V11.3286C9.16333 10.1163 8.16 9.13499 6.92333 9.12345C6.42167 9.12345 5.955 9.28508 5.58167 9.56217C5.20833 9.28508 4.74167 9.12345 4.24 9.12345C3.00333 9.12345 2 10.1163 2 11.3286V15H3.715V11.3171C3.715 11.04 3.93667 10.8206 4.21667 10.8206C4.49667 10.8206 4.71833 11.04 4.71833 11.3171V15H6.445V11.3171C6.445 11.04 6.66667 10.8206 6.94667 10.8206C7.22667 10.8206 7.44833 11.04 7.44833 11.3171V15H9.16333Z"
+                                          fill="#A50064"/>
+                                </svg>
+                            </span>
+                            <span class="txt">Thanh toán qua ví Momo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="payment-type banking">
+                            <span class="icn">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_269_1443)">
+                                        <path d="M16.875 15.75V9H14.625V15.75H12.375V9H10.125V15.75H7.875V9H5.625V15.75H3.375V9H1.125V15.75H0V18H18V15.75H16.875Z"
+                                              fill="#124CA4"/>
+                                        <path d="M17.325 3.48751L9.45 0.112512C9.1125 1.22078e-05 8.8875 1.22078e-05 8.55 0.112512L0.675 3.48751C0.225 3.60001 0 4.05001 0 4.50001V6.75001C0 7.42501 0.45 7.87501 1.125 7.87501H16.875C17.55 7.87501 18 7.42501 18 6.75001V4.50001C18 4.05001 17.775 3.60001 17.325 3.48751ZM9 5.62501C8.325 5.62501 7.875 5.17501 7.875 4.50001C7.875 3.82501 8.325 3.37501 9 3.37501C9.675 3.37501 10.125 3.82501 10.125 4.50001C10.125 5.17501 9.675 5.62501 9 5.62501Z"
+                                              fill="#124CA4"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_269_1443">
+                                            <rect width="18" height="18" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <span class="txt">Thanh toán qua Internet Banking</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="total-bill-order">
+                    <div class="priceFlx">
+                        <div class="text">
+                            Tiền hàng <span class="count">6 món</span>
+                        </div>
+                        <div class="price-detail">
+                            <span>
+                                1.460.000
+                            </span>
+                        </div>
+                    </div>
+                    <div class="priceFlx">
+                        <!-- mac dinh tu lay hang ko co phi van chuyen  -->
+                        <!-- hoa don >500k phi van chuyen = 0 -->
+                        <div class="text">Phí vận chuyển</div>
+                        <div class="price-detail">
+                            <span>
+                                30.000
+                            </span>
+                        </div>
+                    </div>
+                    <div class="priceFlx">
+                        <div class="text">Ưu đãi</div>
+                        <div class="price-detail">
+                            <!-- hien thi rieng tung discount -->
+                            <span class="discount">-20.000</span>
+                            <span class="discount">-30.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="voucherBox">
+                    <div class="form-input-voucher">
+                        <div class="input-voucher">
+                            <div class="checking-voucher">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 0C3.6 0 0 3.6 0 8C0 12.4 3.6 16 8 16C12.4 16 16 12.4 16 8C16 3.6 12.4 0 8 0ZM7 11.4L3.6 8L5 6.6L7 8.6L11 4.6L12.4 6L7 11.4Z"
+                                          fill="#629050"/>
+                                </svg>
+                            </div>
+                            <input type="text" placeholder="Nhập mã khuyến mại">
+                        </div>
+                        <div class="noti">Mã khuyến mại của bạn không thể áp dụng</div>
+                    </div>
+                    <a href="javascript:;" class="confirm-btn">Sử dụng</a>
+                </div>
+                <div class="voucherBox">
+                    <div class="form-input-voucher approved">
+                        <div class="input-voucher">
+                            <div class="checking-voucher">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 0C3.6 0 0 3.6 0 8C0 12.4 3.6 16 8 16C12.4 16 16 12.4 16 8C16 3.6 12.4 0 8 0ZM7 11.4L3.6 8L5 6.6L7 8.6L11 4.6L12.4 6L7 11.4Z"
+                                          fill="#629050"/>
+                                </svg>
+                            </div>
+                            <input type="text" placeholder="Nhập mã khuyến mại">
+                        </div>
+                        <div class="noti">Mã khuyến mại của bạn không thể áp dụng</div>
+                    </div>
+                    <a href="javascript:;" class="confirm-btn">Sử dụng</a>
+                </div>
+                <div class="voucherBox">
+                    <div class="form-input-voucher wrong">
+                        <div class="input-voucher">
+                            <div class="checking-voucher">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 0C3.6 0 0 3.6 0 8C0 12.4 3.6 16 8 16C12.4 16 16 12.4 16 8C16 3.6 12.4 0 8 0ZM7 11.4L3.6 8L5 6.6L7 8.6L11 4.6L12.4 6L7 11.4Z"
+                                          fill="#629050"/>
+                                </svg>
+                            </div>
+                            <input type="text" placeholder="Nhập mã khuyến mại">
+                        </div>
+                        <div class="noti">Mã khuyến mại của bạn không thể áp dụng</div>
+                    </div>
+                    <a href="javascript:;" class="confirm-btn">Sử dụng</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bill">
+            <div class="total-checkout">
+                <div class="text">Tổng tiền</div>
+                <div class="price-bill">
+                    <div class="price-final">1.440.000đ</div>
+                    <div class="price-ori">1.490.000đ</div>
+                </div>
+            </div>
+            <a href="javascript:;" class="complete-checkout-btn">
+                Đặt hàng
+            </a>
+        </div>
     </div>
+</div>
 </body>
 </html>
