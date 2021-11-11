@@ -1,0 +1,42 @@
+.Popup-checkout {
+  width: 100vw; }
+  .Popup-checkout .popUp-content {
+    background: #EEEEEE;
+    padding-top: 72px; }
+  .Popup-checkout .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #FFFFFF;
+    height: 62px;
+    box-shadow: inset 0px -0.5px 0px #E6E6E6;
+    z-index: 99;
+    width: 100%;
+    box-sizing: border-box; }
+    .Popup-checkout .header .back-btn {
+      width: 24px;
+      top: 50%;
+      left: 11px;
+      transform: translateY(-50%);
+      display: block; }
+    .Popup-checkout .header .heading {
+      font-size: 19px;
+      line-height: 130%;
+      font-family: BVNPro-SemiBold;
+      text-align: center;
+      color: #222222; }
+
+.popup-checkout-active .fancybox-slide--html {
+  padding: 0; }
+.popup-checkout-active .fancybox-content {
+  padding: 0;
+  vertical-align: top; }
+.popup-checkout-active .fancybox-bg {
+  background: none; }
+.popup-checkout-active .fancybox-close-small {
+  display: none; }
+
+/*# sourceMappingURL=popup-checkout.css.map */
