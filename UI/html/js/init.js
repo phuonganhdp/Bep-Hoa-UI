@@ -200,6 +200,7 @@
             });
         });
 
+        // Fancy Box Popup Cart
         $('.open-popup-cart').off('click').click(function () {
 
 
@@ -210,12 +211,10 @@
                     protect: true,
                     animationDuration: 500,
                     animationEffect: 'slide-in-out',
-                    touch: false,
                     beforeShow: function () {
                         $('body').addClass('popup-cart-active');
                     },
                     afterShow: function () {
-
 
 
                     },
@@ -225,6 +224,117 @@
                 },
             });
         });
+
+        // Fancy Box Popup Checkout
+        $('.open-popup-checkout').off('click').click(function () {
+
+
+            $.fancybox.open({
+                src: '#open-popup-checkout',
+                type: 'inline',
+                opts: {
+                    protect: true,
+                    animationDuration: 500,
+                    touch: false,
+                    animationEffect: 'slide-in-out-right',
+                    beforeShow: function () {
+                        $('body').addClass('popup-checkout-active');
+                    },
+                    afterShow: function () {
+
+                    },
+                    afterClose: function () {
+                        $('body').removeClass('popup-checkout-active');
+                    }
+                },
+            });
+        });
+
+        //check box type shiping
+        $('.choose-type-order').each(function () {
+            $(this).click(function () {
+                $(".choose-type-order").removeClass("active");
+                $(this).addClass("active");
+            })
+        });
+
+        //check date shiping
+        $('.pick-date').each(function () {
+            $(this).click(function () {
+                $(".pick-date").removeClass("active");
+                $(this).addClass("active");
+            })
+        });
+
+        //check AM PM time
+        $('.ampm-radio').each(function () {
+            $(this).click(function () {
+                $(".ampm-radio").removeClass("active");
+                $(this).addClass("active");
+            })
+        });
+
+        //Input Hour Order
+        $(".hh").blur(function () {
+            if ($(this).val() >= 24)
+                $(this).val($(this).val() % 24);
+
+            if ($(this).val() == "")
+                $(this).val("");
+            else if ($(this).val() < 10)
+                $(this).val("0" + parseInt($(this).val()));
+        });
+        $(".mm").blur(function () {
+            if ($(this).val() >= 60)
+                $(this).val($(this).val() % 60);
+
+            if ($(this).val() == "")
+                $(this).val("");
+            else if ($(this).val() < 10)
+                $(this).val("0" + parseInt($(this).val()));
+
+            var x = $(this).parent().attr("class").split(" ")[1];
+
+        });
+
+        $(".hh").on("input", function () {
+            $(this).parent().removeClass("invalid").removeClass("valid");
+            if ($(this).val().length == 2)
+                $(this).siblings(".mm").focus().select();
+        });
+        $(".mm").on("input", function () {
+            $(this).parent().removeClass("invalid").removeClass("valid");
+            if ($(this).val().length == 2)
+                $(this).blur();
+        });
+        $(".hh").on("focus", function () {
+            $(this).parent().removeClass("invalid").removeClass("valid");
+        });
+        $(".mm").on("focus", function () {
+            $(this).parent().removeClass("invalid").removeClass("valid");
+        });
+
+        function getTime(x) {
+            var t = $(".timepicker." + x).find(".hh").val() + ":" + $(".timepicker." + x).find(".mm").val();
+            var isValid = /^([0-1]?[0-9]|2[0-4]):([0-5][0-9])(:[0-5][0-9])?$/.test(t);
+            var res = t;
+            if (!isValid)
+                res = null;
+            return res;
+        }
+
+
+        function setTime(x, t) {
+            $(".timepicker." + x).children(".hh").val(t.substring(0, 2));
+            $(".timepicker." + x).children(".mm").val(t.substring(3, 5));
+
+        }
+
+
+        $("html").on('input', ".input-hour", function () {
+            $(this).val($(this).val().replace(/[^0-9.]/g, ""));
+        });
+
         if (me.windowW > 800) {
 
         } else {

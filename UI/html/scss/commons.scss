@@ -43,7 +43,6 @@ svg {
   align-items: center;
 }
 
-
 /* Custom input number order */
 .number-order {
   display: flex;
@@ -52,7 +51,6 @@ svg {
   span {
     cursor: pointer;
   }
-
 
   .minus, .plus {
     width: 28px;
@@ -81,7 +79,6 @@ svg {
 
 /* Custom checkbox options order */
 
-
 .form-opt {
   & + .form-opt {
     padding-top: 15px;
@@ -90,7 +87,6 @@ svg {
   }
 
   display: block;
-
 
   label {
     &:before {
@@ -177,7 +173,105 @@ svg {
 
 }
 
+/* Custom radio options order */
+.form-radio {
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+  [type="radio"]:checked + label,
+  [type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 33px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: BVNPro-Regular;
+    font-size: 14px;
+    line-height: 150%;
+    color: #222222;
+  }
+  [type="radio"]:checked + label:before,
+  [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1.5px solid #999999;
+  }
+  [type="radio"]:checked + label:before {
 
+    border: 1.5px solid #B5292F;
+
+  }
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #B5292F;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 100%;
+    transition: all 0.2s ease;
+  }
+  [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* Custom input hours order */
+.timepicker {
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 9px;
+  background: #FFFFFF;
+  border: 1.5px solid #000000;
+  box-sizing: border-box;
+  border-radius: 6px;
+  span {
+    font-size: 14px;
+    line-height: 100%;
+    font-family: BVNPro-Regular;
+    margin: 0 4px;
+    display: block;
+    color: #222222;
+
+  }
+  .input-hour {
+    width: 20px;
+    height: 14px;
+    outline: none;
+    border: none;
+    text-align: center;
+    background: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 100%;
+    font-family: BVNPro-Regular;
+    color: #222222;
+    padding: 0;
+    &::placeholder {
+      opacity: 0.5;
+    }
+
+  }
+
+}
 
 
 

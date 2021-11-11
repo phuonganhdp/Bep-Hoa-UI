@@ -34,6 +34,7 @@ input {
 }
 
 input[type=text],
+input[type=number],
 input[type=email],
 input[type=password],
 textarea {
@@ -41,7 +42,8 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
+  -moz-appearance: textfield;
+  outline: none;
 }
 
 /* HTML5 display-role reset for older browsers */

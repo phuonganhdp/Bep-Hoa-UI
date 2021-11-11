@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bep Hoa UI</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/init.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            App.initHelpers(['home']);
+        });
+    </script>
+</head>
+<body>
+<div class="bh-wrapper bh-home_wrapper">
+    <a href="javascript:;" class="open-popup-checkout">
+        OPEN POPUP
+    </a>
+</div>
+
+<div class="Popup-checkout" id="open-popup-checkout">
+    <div class="popup-content">
+        <div class="header">
+            <a href="javascript:;" data-fancybox-close class="back-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5 5L8.5 12L15.5 19" stroke="#666666" stroke-width="1.8" stroke-miterlimit="10"
+                          stroke-linecap="square"/>
+                </svg>
+            </a>
+            <div class="heading">Thanh toán</div>
+        </div>
+        <div class="infoBox">
+            <div class="title">
+                Thông tin đơn hàng
+            </div>
+            <div class="contentBox">
+                <div class="infoGroup">
+                    <div class="label">Hình thức giao nhận</div>
+                    <div class="type-order">
+                        <a href="javascript:;" class="choose-type-order active shipping">
+                            <span class="icn"></span>
+                            <span class="txt">
+                            Giao tận nơi
+                        </span>
+                        </a>
+                        <a href="javascript:;" class="choose-type-order pickup">
+                            <span class="icn"></span>
+                            <span class="txt">
+                            Tự đến lấy
+                        </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="infoGroup">
+                    <div class="label">Ngày giao hàng</div>
+                    <div class="date-order">
+                        <a href="javascript:;" class="pick-date active">
+                            <span class="text">Hôm nay</span>
+                            <span class="date">T6. 27/10</span>
+                        </a>
+                        <a href="javascript:;" class="pick-date">
+                            <span class="text">Ngày mai</span>
+                            <span class="date">T7. 28/10</span>
+                        </a>
+                        <a href="javascript:;" class="pick-date">
+                            <span class="text">Ngày kia</span>
+                            <span class="date">CN. 29/10</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="infoGroup">
+                    <div class="label">Giờ giao hàng</div>
+                    <div class="time-order">
+                        <div class="choose-time-order">
+                            <div class="form-radio">
+                                <input type="radio" id="test1" name="radio-group" checked>
+                                <label for="test1">Giao ngay khi xong</label>
+                            </div>
+                        </div>
+                        <div class="choose-time-order">
+                            <div class="form-radio">
+                                <input type="radio" id="test2" name="radio-group">
+                                <label for="test2">Giao vào giờ</label>
+                            </div>
+                            <div class="flexBox">
+
+                                <div class="timepicker timepicker1" dir="ltr">
+                                    <input type="number" class="hh input-hour" min="0" max="12" placeholder="00"
+                                           maxlength="2"/>
+                                    <span>:</span>
+                                    <input type="number" class="mm input-hour" min="0" max="59" placeholder="00"
+                                           maxlength="2"/>
+                                </div>
+                                <div class="choose-ampm">
+                                    <a href="javascript:;" class="ampm-radio active">Sáng</a>
+                                    <a href="javascript:;" class="ampm-radio">Chiều</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="infoGroup">
+                    <div class="label">Nhận hàng tại chi nhánh</div>
+                    <div class="time-order">
+                        <div class="choose-time-order">
+                            <div class="form-radio">
+                                <input type="radio" id="test3" name="radio-group" checked>
+                                <label for="test3">131 Thịnh Quang, Đống Đa, HN</label>
+                            </div>
+                        </div>
+                        <div class="choose-time-order">
+                            <div class="form-radio">
+                                <input type="radio" id="test4" name="radio-group">
+                                <label for="test4">22 Ngụy Như Kon Tum, Thanh Xuân, HN</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="infoGroup">
+                    <div class="label">Đơn hàng</div>
+                    <div class="bill-total">
+                        <div class="food-total">
+                            <div class="count">1x</div>
+                            <div class="info-food">
+                                <div class="name-food">Miến om cua Cà Mau ngon đỉnh của đỉnh</div>
+                                <div class="options-food">
+                                    <span class="opt-food">Thêm 1 con cua</span>
+                                    <span class="opt-food">Thêm miến</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-total">
+                            <div class="count">1x</div>
+                            <div class="info-food">
+                                <div class="name-food">Miến om cua Cà Mau ngon đỉnh của đỉnh</div>
+                                <div class="options-food">
+                                    <span class="opt-food">Thêm 1 con cua</span>
+                                    <span class="noted-food">Không tương ớt, nghiều rau, bỏ riêng hành tây</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-total">
+                            <div class="count">4x</div>
+                            <div class="info-food">
+                                <div class="name-food">Cocacola</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="infoGroup">
+                    <div class="label">Ghi chú đơn hàng</div>
+                    <input type="text" class="note-order" placeholder="Nhập ghi chú"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
