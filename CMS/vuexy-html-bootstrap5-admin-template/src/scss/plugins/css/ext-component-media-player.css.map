@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAWE,mBAAQ;EACN,OAAO,EAAE,CAAC;;AAGd,eAAgB;EACd,eAAe,EAAE,UAAU;;AAE7B,eAAgB;EACd,SAAS,EAAE,CAAC",
-"sources": ["../extensions/ext-component-media-player.scss"],
-"names": [],
-"file": "ext-component-media-player.css"
-}
+{"version":3,"sourceRoot":"","sources":["../extensions/ext-component-media-player.scss"],"names":[],"mappings":"AAWE;EACE;;;AAGJ;EACE;;;AAEF;EACE","file":"ext-component-media-player.css"}
