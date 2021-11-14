@@ -64,19 +64,7 @@ window.colors = {
       $html.removeClass('loading').addClass('loaded');
     }, 1200);
 
-    $.app.menu.init(compactMenu);
 
-    // Navigation configurations
-    var config = {
-      speed: 300 // set speed to expand / collapse menu
-    };
-    if ($.app.nav.initialized === false) {
-      $.app.nav.init(config);
-    }
-
-    Unison.on('change', function (bp) {
-      $.app.menu.change(compactMenu);
-    });
 
     // Tooltip Initialization
     // $('[data-bs-toggle="tooltip"]').tooltip({
@@ -312,41 +300,7 @@ window.colors = {
       });
     }
 
-    // menu swipe out gesture
-    setTimeout(function () {
-      var swipeOutElement = document.querySelector('.main-menu');
-      var swipeOutMenu;
 
-      if ($(swipeOutElement).length > 0) {
-        swipeOutMenu = new Hammer(swipeOutElement);
-
-        swipeOutMenu.get('pan').set({
-          direction: Hammer.DIRECTION_ALL,
-          threshold: 250
-        });
-
-        swipeOutMenu.on(swipeOutAction, function (ev) {
-          if ($body.hasClass('vertical-overlay-menu')) {
-            $.app.menu.hide();
-            return false;
-          }
-        });
-      }
-    }, 300);
-
-    // menu close on overlay tap
-    var swipeOutOverlayElement = document.querySelector('.sidenav-overlay');
-
-    if ($(swipeOutOverlayElement).length > 0) {
-      var swipeOutOverlayMenu = new Hammer(swipeOutOverlayElement);
-
-      swipeOutOverlayMenu.on('tap', function (ev) {
-        if ($body.hasClass('vertical-overlay-menu')) {
-          $.app.menu.hide();
-          return false;
-        }
-      });
-    }
   }
 
   $(document).on('click', '.menu-toggle, .modern-nav-toggle', function (e) {

@@ -1153,12 +1153,12 @@ footer.footer-border {
 }
 
 .main-menu .navbar-header .navbar-brand .brand-text {
-    color: #5E5873;
+    color: #666;
     padding-left: 1rem;
     margin-bottom: 0;
     font-family: Roboto-Regular;
     letter-spacing: 0.01rem;
-    font-size: 1.1rem;
+    font-size: .85rem;
     animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
 }
 
