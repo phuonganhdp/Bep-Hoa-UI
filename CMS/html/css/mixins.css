@@ -1,0 +1,19 @@
+.bb05 {
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.bt05 {
+  border-top: 1px solid #E7E7E7;
+}
+
+@media screen and (max-width: 800px) {
+  .bb05 {
+    border-bottom: 0.5px solid #E7E7E7;
+  }
+
+  .bt05 {
+    border-top: 0.5px solid #E7E7E7;
+  }
+}
+
+/*# sourceMappingURL=mixins.css.map */

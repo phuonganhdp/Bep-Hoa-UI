@@ -1,0 +1,30 @@
+.manage-systems {
+  .manage-sys-type {
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+    display: flex;
+    padding: 1.2rem;
+    color: #111111;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .list-manage-type{
+    row-gap: 20px;
+
+  }
+
+  .icon {
+    font-size: 24px;
+    margin-right: 16px;
+  }
+
+  span {
+    display: block;
+  }
+
+  .mst-total {
+    display: block;
+  }
+}

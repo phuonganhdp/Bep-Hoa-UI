@@ -1,0 +1,23 @@
+.disabled {
+  display: none !important;
+}
+
+.label-nav-menu {
+  padding: 0 20px;
+}
+.label-nav-menu .icn {
+  margin-right: 16px;
+  font-size: 20px;
+}
+.label-nav-menu .txt {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-family: Roboto-Medium;
+  color: #5E5873;
+}
+
+.main-menu ul.navigation-main > li + li {
+  margin-top: 1rem;
+}
+
+/*# sourceMappingURL=common.css.map */

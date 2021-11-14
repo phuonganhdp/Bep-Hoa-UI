@@ -1,0 +1,113 @@
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto-Italic;
+  src: url("../fonts/Roboto-Italic.ttf");
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: Roboto-Medium;
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: Roboto-MediumItalic;
+  src: url("../fonts/Roboto-MediumItalic.ttf");
+}
+.bb05 {
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.bt05 {
+  border-top: 1px solid #E7E7E7;
+}
+
+@media screen and (max-width: 800px) {
+  .bb05 {
+    border-bottom: 0.5px solid #E7E7E7;
+  }
+
+  .bt05 {
+    border-top: 0.5px solid #E7E7E7;
+  }
+}
+.disabled {
+  display: none !important;
+}
+
+.label-nav-menu {
+  padding: 0 20px;
+}
+.label-nav-menu .icn {
+  margin-right: 16px;
+  font-size: 20px;
+}
+.label-nav-menu .txt {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  font-family: Roboto-Medium;
+  color: #5E5873;
+}
+
+.header-fixed-top {
+  position: fixed;
+  top: 0;
+  left: 260px;
+  z-index: 99;
+  width: calc(100% - 260px);
+  box-sizing: border-box;
+  height: 60px;
+  padding: 0 28px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+}
+
+.main-menu ul.navigation-main > li + li {
+  margin-top: 1rem;
+}
+
+.main-menu-content {
+  overflow-y: scroll;
+}
+.main-menu-content:hover::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: var(--bs-gray);
+}
+.main-menu-content::-webkit-scrollbar {
+  width: 6px;
+}
+.main-menu-content::-webkit-scrollbar-track {
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+.manage-systems .manage-sys-type {
+  background: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  border-radius: 5px;
+  display: flex;
+  padding: 1.2rem;
+  color: #111111;
+  height: 100%;
+  box-sizing: border-box;
+}
+.manage-systems .list-manage-type {
+  row-gap: 20px;
+}
+.manage-systems .icon {
+  font-size: 24px;
+  margin-right: 16px;
+}
+.manage-systems span {
+  display: block;
+}
+.manage-systems .mst-total {
+  display: block;
+}
+
+/*# sourceMappingURL=stye.css.map */
