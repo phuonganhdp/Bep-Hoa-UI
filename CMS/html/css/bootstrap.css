@@ -69,6 +69,7 @@ hr:not([size]) {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
+    font-weight: normal;
     font-family: Roboto-Medium;
     line-height: 1.2;
     color: #111;
@@ -2569,7 +2570,7 @@ textarea.form-control-lg {
     line-height: 1.45;
     color: #6e6b7b;
     background-color: #fff;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d8d6de' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: right 1rem center;
     background-size: 15px 14px;
@@ -2617,6 +2618,7 @@ textarea.form-control-lg {
     min-height: 1.45rem;
     padding-left: 1.785rem;
     margin-bottom: 0;
+    position: relative;
 }
 
 .form-check .form-check-input {
@@ -2659,6 +2661,26 @@ textarea.form-control-lg {
 .form-check-input:checked {
     background-color: #7367f0;
     border-color: #7367f0;
+}
+
+.form-check-input[type='radio'] ~ label:after {
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    width: 0.485rem;
+    height: 0.485rem;
+    border-radius: 50%;
+    display: block;
+    background: #fff;
+    position: absolute;
+    left: 0.6rem;
+    top: 0.35rem;
+    content: '';
+}
+
+.form-check-input[type='radio']:checked ~ label:after {
+    opacity: 1;
+    visibility: visible;
 }
 
 .form-check-input:checked[type="checkbox"] {
@@ -3031,7 +3053,7 @@ textarea.form-control-lg {
 
 .was-validated .form-select:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"], .form-select.is-valid:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"] {
     padding-right: 3.5rem;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d8d6de' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328c76f' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328c76f' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
     background-position: right 1rem center, center right 1rem;
     background-size: 15px 14px, calc(0.725em + 0.571rem) calc(0.725em + 0.571rem);
 }
@@ -3127,7 +3149,7 @@ textarea.form-control-lg {
 
 .was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"] {
     padding-right: 3.5rem;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d8d6de' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23ea5455'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23ea5455' stroke='none'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23ea5455'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23ea5455' stroke='none'/%3e%3c/svg%3e");
     background-position: right 1rem center, center right 1rem;
     background-size: 15px 14px, calc(0.725em + 0.571rem) calc(0.725em + 0.571rem);
 }
@@ -4221,8 +4243,6 @@ fieldset:disabled .btn {
 .btn-group > .btn-group:not(:first-child) {
     margin-left: -1px;
 }
-
-
 
 .dropdown-toggle-split {
     padding-right: 1.125rem;
@@ -6010,6 +6030,10 @@ fieldset:disabled .btn {
     .modal-lg,
     .modal-xl {
         max-width: 1100px;
+    }
+
+    .modal-md {
+        max-width: 900px;
     }
 }
 
@@ -8146,8 +8170,6 @@ fieldset:disabled .btn {
 .fs-9 {
     font-size: .75rem !important;
 }
-
-
 
 .fst-italic {
     font-family: Roboto-Italic;

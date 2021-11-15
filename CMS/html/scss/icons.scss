@@ -1,0 +1,228 @@
+/* --------------------------------
+
+Nucleo Web Font
+Generated using nucleoapp.com
+
+-------------------------------- */
+$icon-font-path: "../fonts" !default;
+
+@font-face {
+  font-family: 'Nucleo';
+  src: url('#{$icon-font-path}/Nucleo.eot');
+  src: url('#{$icon-font-path}/Nucleo.eot') format('embedded-opentype'),
+    url('#{$icon-font-path}/Nucleo.woff2') format('woff2'),
+    url('#{$icon-font-path}/Nucleo.woff') format('woff'),
+    url('#{$icon-font-path}/Nucleo.ttf') format('truetype'),
+    url('#{$icon-font-path}/Nucleo.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------------
+	base class definition
+-------------------------*/
+
+.icon {
+  display: inline-block;
+  font: normal normal normal 1em/1 'Nucleo';
+  color: inherit;
+  flex-shrink: 0;
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------------------
+  change icon size
+-------------------------*/
+
+/* relative units */
+.icon-sm {
+  font-size: 0.8em;
+}
+.icon-lg {
+  font-size: 1.2em;
+}
+/* absolute units */
+.icon-16 {
+  font-size: 16px;
+}
+.icon-32 {
+  font-size: 32px;
+}
+
+/*------------------------
+  spinning icons
+-------------------------*/
+
+.icon-is-spinning {
+  animation: icon-spin 1s infinite linear;
+}
+
+@keyframes icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+
+.icon-rotate-90  {
+	transform: rotate(90deg);
+}
+
+.icon-rotate-180 {
+	transform: rotate(180deg);
+}
+
+.icon-rotate-270 {
+	transform: rotate(270deg);
+}
+
+.icon-flip-y {
+	transform: scaleY(-1);
+}
+.icon-flip-x {
+	transform: scaleX(-1);
+}
+
+/*------------------------
+	icons
+-------------------------*/
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+$icon-wrench: unicode(ea02);
+$icon-gear: unicode(ea03);
+$icon-check-in: unicode(ea04);
+$icon-shop-location: unicode(ea05);
+$icon-account: unicode(ea06);
+$icon-multiple-11: unicode(ea07);
+$icon-shop: unicode(ea08);
+$icon-discount-2: unicode(ea09);
+$icon-users-wm: unicode(ea0a);
+$icon-salad: unicode(ea0b);
+$icon-basket: unicode(ea0c);
+$icon-unlocked: unicode(ea0d);
+$icon-lock: unicode(ea0e);
+$icon-increase: unicode(ea0f);
+$icon-time-clock: unicode(ea10);
+$icon-print: unicode(ea11);
+$icon-zoom: unicode(ea12);
+$icon-e-remove-2: unicode(ea13);
+$icon-move-up: unicode(ea14);
+$icon-check: unicode(ea15);
+$icon-e-remove-1: unicode(ea16);
+$icon-down-arrow: unicode(ea17);
+$icon-c-add: unicode(ea18);
+$icon-calendar-date-2: unicode(ea19);
+$icon-pin-angle-fill: unicode(ea1a);
+
+.icon-wrench::before {
+  content: $icon-wrench;
+}
+
+.icon-gear::before {
+  content: $icon-gear;
+}
+
+.icon-check-in::before {
+  content: $icon-check-in;
+}
+
+.icon-shop-location::before {
+  content: $icon-shop-location;
+}
+
+.icon-account::before {
+  content: $icon-account;
+}
+
+.icon-multiple-11::before {
+  content: $icon-multiple-11;
+}
+
+.icon-shop::before {
+  content: $icon-shop;
+}
+
+.icon-discount-2::before {
+  content: $icon-discount-2;
+}
+
+.icon-users-wm::before {
+  content: $icon-users-wm;
+}
+
+.icon-salad::before {
+  content: $icon-salad;
+}
+
+.icon-basket::before {
+  content: $icon-basket;
+}
+
+.icon-unlocked::before {
+  content: $icon-unlocked;
+}
+
+.icon-lock::before {
+  content: $icon-lock;
+}
+
+.icon-increase::before {
+  content: $icon-increase;
+}
+
+.icon-time-clock::before {
+  content: $icon-time-clock;
+}
+
+.icon-print::before {
+  content: $icon-print;
+}
+
+.icon-zoom::before {
+  content: $icon-zoom;
+}
+
+.icon-e-remove-2::before {
+  content: $icon-e-remove-2;
+}
+
+.icon-move-up::before {
+  content: $icon-move-up;
+}
+
+.icon-check::before {
+  content: $icon-check;
+}
+
+.icon-e-remove-1::before {
+  content: $icon-e-remove-1;
+}
+
+.icon-down-arrow::before {
+  content: $icon-down-arrow;
+}
+
+.icon-c-add::before {
+  content: $icon-c-add;
+}
+
+.icon-calendar-date-2::before {
+  content: $icon-calendar-date-2;
+}
+
+.icon-pin-angle-fill::before {
+  content: $icon-pin-angle-fill;
+}
+

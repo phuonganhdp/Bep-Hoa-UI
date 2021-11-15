@@ -511,7 +511,7 @@ select:-webkit-autofill {
 
 .btn {
     box-shadow: none;
-    font-weight: 500;
+    font-family: Roboto-Medium;
 }
 
 .btn[class*='bg-gradient-'] {
@@ -637,7 +637,7 @@ select:-webkit-autofill {
 }
 
 .dropdown-menu .dropdown-header {
-    font-weight: 500;
+    font-family: Roboto-Medium;
     line-height: 1;
 }
 
@@ -907,7 +907,7 @@ select:-webkit-autofill {
 }
 
 .header-navbar .navbar-container .dropdown-language .selected-language {
-    font-weight: 500;
+    font-family: Roboto-Medium;
 }
 
 .header-navbar .navbar-container .dropdown-language .nav-link .flag-icon {
@@ -1359,7 +1359,7 @@ select:-webkit-autofill {
 }
 
 .card .card-title {
-    font-weight: 500;
+    font-family: Roboto-Medium;
     font-size: 1.285rem;
     margin-bottom: 1.53rem;
 }
@@ -1736,7 +1736,7 @@ select:-webkit-autofill {
 
 .chart-dropdown .btn {
     font-size: 1rem;
-    font-weight: 400;
+    font-family: Roboto-Regular;
 }
 
 .chart-dropdown .btn:after {
@@ -1789,7 +1789,7 @@ select:-webkit-autofill {
 .earnings-card .apexcharts-canvas .apexcharts-pie .apexcharts-datalabel-value {
     fill: #5e5873;
     font-size: 1.286rem;
-    font-weight: 500;
+    font-family: Roboto-Medium;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -2244,7 +2244,7 @@ select:-webkit-autofill {
 }
 
 .alert {
-    font-weight: 500;
+    font-family: Roboto-Medium;
     padding: 0;
 }
 
@@ -2267,14 +2267,14 @@ select:-webkit-autofill {
 }
 
 .alert p {
-    font-weight: 500;
+    font-family: Roboto-Medium;
     padding: 2px 0;
     margin-bottom: 0;
     vertical-align: middle;
 }
 
 .alert .alert-heading {
-    font-weight: 600;
+    font-family: Roboto-Bold;
     font-size: 1rem;
     padding: 0.71rem 1rem;
     margin-bottom: 0;
@@ -2391,7 +2391,7 @@ ul.list-inline.list-inline-pipe > li + li:before {
 }
 
 .accordion [data-bs-toggle='collapse'] {
-    font-weight: 500;
+    font-family: Roboto-Medium;
     font-size: 1.1rem;
     line-height: 1.45;
 }
@@ -2624,7 +2624,7 @@ ul.list-inline.list-inline-pipe > li + li:before {
     border-radius: 5rem;
     background-color: #7367f0;
     color: #fff !important;
-    font-weight: 600;
+    font-family: Roboto-Bold;
 }
 
 .page-item:first-child:not(.prev-item).active {

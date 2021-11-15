@@ -3,6 +3,7 @@ body {
   --colorBlue: #43A5FF;
   --colorOrange: #FF9F43;
   --colorPurple: #7367F0;
+  --colorGreen: #28C76F;
 }
 
 .disabled {
@@ -12,15 +13,20 @@ body {
 .label-nav-menu {
   padding: 0 20px;
 
-
   .icn {
-    margin-right: 16px;
-    font-size: 20px;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    color: var(--colorPurple);
+    display: inline-block;
+    font-family: Nucleo;
+    speak: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
   }
 
   .txt {
     font-size: 1rem;
-    line-height: 1.8rem;
+    line-height: 1.3rem;
     font-family: Roboto-Medium;
     color: #5E5873;
 
@@ -81,7 +87,6 @@ body {
       background: var(--bs-gray);
     }
   }
-
 
   &::-webkit-scrollbar {
     width: 6px;
@@ -166,7 +171,6 @@ body {
         }
       }
 
-
       display: flex;
       align-items: center;
       padding: 1rem 0;
@@ -183,8 +187,8 @@ body {
     }
   }
 
-
 }
+
 .form-label {
   font-family: Roboto-Medium;
   color: #111;
@@ -197,16 +201,17 @@ body {
     color: var(--colorRed);
   }
 }
+
 .selectBox {
-  &.active{
-    .list-select-type{
+  &.active {
+    .list-select-type {
       opacity: 1;
       visibility: visible;
     }
   }
   position: relative;
   z-index: 10;
-
+  cursor: pointer;
   .selected {
     height: 40px;
     border: 1px solid #D8D6DE;
@@ -248,7 +253,6 @@ body {
     font-family: Roboto-Regular;
     color: #111111;
 
-
     .icn {
       &.purple {
         background: var(--colorPurple);
@@ -266,6 +270,9 @@ body {
         background: var(--colorOrange);
       }
 
+      &.green {
+        background: var(--colorGreen);
+      }
       flex-shrink: 0;
       width: 8px;
       height: 8px;
@@ -286,5 +293,30 @@ body {
     li:hover {
       background: #F8F8F8;
     }
+  }
+}
+
+.btn-close-modal {
+  &:hover {
+    opacity: 1;
+  }
+  font-family: Nucleo;
+  font-size: 1rem;
+  color: #555;
+  opacity: .5;
+}
+
+.modal-header {
+  position: relative;
+  &:before {
+    background: var(--colorPurple);
+    width: 4px;
+    height: 18px;
+    left: 0;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    display: block;
+    content: '';
   }
 }

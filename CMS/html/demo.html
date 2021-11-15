@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/stye.css">
+	<link rel="icon" type="image/svg+xml" href="demo/favicon.svg">
+	<title>Nucleo Web Font</title>
+</head>
+<body>
+	<header>
+		<h1>Nucleo Web Font</h1>
+		<p>Generated using <a href="https://nucleoapp.com">nucleoapp.com</a></p>
+	</header>
+
+	<div id="icons-wrapper">
+		<section>
+			<ul>
+                
+                    <li>
+                        <i class="icon icon-wrench"></i>
+                        <p>icon-wrench</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-gear"></i>
+                        <p>icon-gear</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-check-in"></i>
+                        <p>icon-check-in</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-shop-location"></i>
+                        <p>icon-shop-location</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-account"></i>
+                        <p>icon-account</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-multiple-11"></i>
+                        <p>icon-multiple-11</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-shop"></i>
+                        <p>icon-shop</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-discount-2"></i>
+                        <p>icon-discount-2</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-users-wm"></i>
+                        <p>icon-users-wm</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-salad"></i>
+                        <p>icon-salad</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-basket"></i>
+                        <p>icon-basket</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-unlocked"></i>
+                        <p>icon-unlocked</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-lock"></i>
+                        <p>icon-lock</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-increase"></i>
+                        <p>icon-increase</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-time-clock"></i>
+                        <p>icon-time-clock</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-print"></i>
+                        <p>icon-print</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-zoom"></i>
+                        <p>icon-zoom</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-e-remove-2"></i>
+                        <p>icon-e-remove-2</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-move-up"></i>
+                        <p>icon-move-up</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-check"></i>
+                        <p>icon-check</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-e-remove-1"></i>
+                        <p>icon-e-remove-1</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-down-arrow"></i>
+                        <p>icon-down-arrow</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-c-add"></i>
+                        <p>icon-c-add</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-calendar-date-2"></i>
+                        <p>icon-calendar-date-2</p>
+                    </li>
+                
+                    <li>
+                        <i class="icon icon-pin-angle-fill"></i>
+                        <p>icon-pin-angle-fill</p>
+                    </li>
+                
+				<!-- list of icons here with the proper class-->
+			</ul>
+		</section>
+	</div>
+<script>
+    function SelectText(element) {
+	    var doc = document
+	        , text = element
+	        , range, selection;
+	    if (doc.body.createTextRange) {
+	        range = document.body.createTextRange();
+	        range.moveToElementText(text);
+	        range.select();
+	    } else if (window.getSelection) {
+	        selection = window.getSelection();
+	        range = document.createRange();
+	        range.selectNodeContents(text);
+	        selection.removeAllRanges();
+	        selection.addRange(range);
+	    }
+	}
+    window.onload = function() {
+    	var iconsWrapper = document.getElementById('icons-wrapper'),
+    		listItems = iconsWrapper.getElementsByTagName('li');
+        for (var i = 0; i < listItems.length; i++) {
+		    listItems[i].onclick  = function fun(event) {
+		    	var selectedTagName = event.target.tagName.toLowerCase();
+		    	if( selectedTagName == 'p' || selectedTagName == 'em' ) {
+		    		SelectText(event.target);
+		    	} else if( selectedTagName == 'input' ) {
+		    		event.target.setSelectionRange(0, event.target.value.length);
+		    	}
+		    }
+
+		    var beforeContentChar = window.getComputedStyle(listItems[i].getElementsByTagName('i')[0], '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, ""),
+		    	beforeContent = beforeContentChar.codePointAt(0).toString(16);
+		    var beforeContentElement = document.createElement("em");
+		    beforeContentElement.textContent = "\\"+beforeContent;
+		    listItems[i].appendChild(beforeContentElement);
+
+		    //create input element to copy/paste chart
+		    var charCharac = document.createElement('input');
+		    charCharac.setAttribute('type', 'text');
+		    charCharac.setAttribute('maxlength', '1');
+		    charCharac.setAttribute('readonly', 'true');
+		    charCharac.setAttribute('value', beforeContentChar);
+		    listItems[i].appendChild(charCharac);
+		}
+    }
+</script>
+</body>
+</html>
