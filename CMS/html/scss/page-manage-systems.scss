@@ -19,16 +19,7 @@
       color: var(--colorPurple);
     }
   }
-  .btn-add {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .icn {
-      margin-left: .5rem;
-      font-size: 1rem;
-      font-family: Nucleo;
-    }
-  }
+
 
   span {
     display: block;
@@ -185,16 +176,16 @@
 
   .modal-body {
     .form-check {
-      padding-left: 20px;
-      display: flex;
-      align-items: center;
-      min-height: auto;
+      //padding-left: 20px;
+      //display: flex;
+      //align-items: center;
+      //min-height: auto;
 
       .form-check-input {
-        margin-left: -1rem;
-        width: 1rem;
-        height: 1rem;
-        margin-right: 5px;
+        //margin-left: -1rem;
+        //width: 1rem;
+        //height: 1rem;
+        //margin-right: 5px;
       }
 
       label {

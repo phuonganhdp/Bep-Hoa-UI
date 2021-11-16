@@ -2087,6 +2087,8 @@ select:-webkit-autofill {
 .nav-tabs {
     margin-bottom: 1rem;
     position: relative;
+    border-bottom: 1px solid #EFEFEF;
+    padding: 0 1rem;
 }
 
 .nav-tabs .nav-item {
@@ -2098,10 +2100,11 @@ select:-webkit-autofill {
     border: none;
     min-width: auto;
     font-weight: 450;
-    padding: 0.61rem 1.2rem;
+    padding: 0.61rem 0;
     border-radius: 0;
     position: relative;
     overflow: hidden;
+    margin-right: 2rem;
 }
 
 .nav-tabs .nav-link:after {
@@ -2615,14 +2618,14 @@ ul.list-inline.list-inline-pipe > li + li:before {
 }
 
 .page-item.active {
-    background-color: #f3f2f7;
+    background-color: #ffffff;
     border-radius: 0;
 }
 
 .page-item.active .page-link {
     z-index: 3;
     border-radius: 5rem;
-    background-color: #7367f0;
+    background-color: #5E5873;
     color: #fff !important;
     font-family: Roboto-Bold;
 }

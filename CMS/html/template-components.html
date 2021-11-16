@@ -22,6 +22,7 @@
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="css/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/select2.min.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -213,29 +214,450 @@
     <div class="content-overlay"></div>
     <div class="header-navbar-shadow"></div>
     <div class="content-wrapper container-xxl p-0">
-        <div class="content-header row">
-            <div class="content-header-left col-md-9 col-12 mb-2">
-                <div class="row breadcrumbs-top">
+
+        <div class="content-body"><!-- Filled Buttons start -->
+            <section>
+                <div class="row">
                     <div class="col-12">
-                        <h2 class="content-header-title float-start mb-0">Buttons</h2>
-                        <div class="breadcrumb-wrapper">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a>
-                                </li>
-                                <li class="breadcrumb-item"><a href="#">Components</a>
-                                </li>
-                                <li class="breadcrumb-item active">Buttons
-                                </li>
-                            </ol>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Bep Hoa Components</h4>
+                            </div>
+                            <div class="card-body">
+                                <h5>Class list</h5>
+                                <div class="demo-inline-spacing">
+                                    <b>.bh-disabled</b>
+                                    <i>Class mặc định cho những thứ cần ẩn</i>
+                                </div>
+
+                                <div class="demo-inline-spacing">
+                                    <div class="bh-text-red"><b>.bh-text-red</b></div>
+                                    <div class="bh-text-green"><b>.bh-text-green</b></div>
+                                    <div class="bh-text-orange"><b>.bh-text-orange</b></div>
+                                    <div class="bh-text-blue"><b>.bh-text-blue</b></div>
+                                    <div class="bh-text-111"><b>.bh-text-111</b></div>
+                                    <div class="bh-text-777"><b>.bh-text-777</b></div>
+                                    <div class="bh-text-666"><b>.bh-text-666</b></div>
+                                    <i>Class màu chữ</i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5>Status</h5>
+                                <div class="demo-inline-spacing">
+                                    <div class="status bh-stt-waiting">
+                                        <div class="color"></div>
+                                        <div class="text">Chờ xử lý</div>
+                                    </div>
+                                    <div class="status bh-stt-progress">
+                                        <div class="color"></div>
+                                        <div class="text">Đã lên đơn</div>
+                                    </div>
+                                    <div class="status bh-stt-success">
+                                        <div class="color"></div>
+                                        <div class="text">Bếp đã hoàn thành</div>
+                                    </div>
+                                    <div class="status bh-stt-cancel">
+                                        <div class="color"></div>
+                                        <div class="text">Huỷ đơn</div>
+                                    </div>
+                                </div>
+                                <div class="demo-inline-spacing">
+                                    <div class="status bh-stt-orange">
+                                        <div class="color"></div>
+                                        <div class="text">Đã xoá</div>
+                                    </div>
+                                    <div class="status bh-stt-blue">
+                                        <div class="color"></div>
+                                        <div class="text">Có cơ sở hết</div>
+                                    </div>
+                                    <div class="status bh-stt-green">
+                                        <div class="color"></div>
+                                        <div class="text">Đang bán</div>
+                                    </div>
+                                    <div class="status bh-stt-red">
+                                        <div class="color"></div>
+                                        <div class="text">Không bán</div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5>Status Ship</h5>
+                                <div class="demo-inline-spacing">
+                                    <div class="status-ship bh-ship-done">
+                                        <div class="icn icon-check"></div>
+                                        <div class="text">Đã giao</div>
+                                    </div>
+                                    <div class="status-ship bh-ship-not">
+                                        <div class="icn icon-e-remove-1"></div>
+                                        <div class="text">Chưa giao</div>
+                                    </div>
+                                    <div class="status-ship bh-ship-cancel">
+                                        <div class="icn icon-e-remove-1"></div>
+                                        <div class="text">Trả lại hàng</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5>Status pay</h5>
+                                <div class="demo-inline-spacing">
+                                    <div class="status-pay bh-pay-done">
+                                        <div class="icn icon-check"></div>
+                                        <div class="text">Đã thanh toán</div>
+                                    </div>
+                                    <div class="status-pay bh-pay-not">
+                                        <div class="icn icon-e-remove-1"></div>
+                                        <div class="text">Chưa thanh toán</div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Bep Hoa button</h5>
+                                <div class="demo-inline-spacing">
+                                    <a href="javascript:;" class="btn-print">
+                                        <span class="icn icon-print"></span>
+                                        <span class="txt">In đơn</span>
+                                    </a>
+                                    <a href="javascript:;" class="btn-history">
+                                        <span class="icn icon-time-clock"></span>
+                                        <span class="txt">Lịch sử chỉnh sửa</span>
+                                    </a>
+                                    <a href="javascript:;" class="btn-sort-table">
+                                        <span class="txt">Khách hàng</span>
+                                        <span class="icn icon-increase"></span>
+                                    </a>
+                                    <a href="javascript:;" class="btn btn-pin">
+                                        <span class="icn icon-pin-angle-fill"></span>
+                                    </a>
+                                    <a href="javascript:;" class="btn btn-pin active">
+                                        <span class="icn icon-pin-angle-fill"></span>
+                                    </a>
+                                    <div class="btn-group">
+                                        <button class="btn btn-outline-secondary  waves-effect waves-float waves-light"
+                                                type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
+                                                      fill="#666666"/>
+                                                <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
+                                                      fill="#666666"/>
+                                                <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
+                                                      fill="#666666"/>
+                                            </svg>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-end"
+                                             aria-labelledby="dropdownMenuButton6" style="">
+                                            <a class="dropdown-item" href="#">Sửa</a>
+                                            <a class="dropdown-item" href="#">Xóa</a>
+
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" type="button" class="btn bg-primary text-white btn-add"
+                                       data-bs-toggle="modal"
+                                       data-bs-target="#exampleModalCenter">
+                                         <span class="txt">
+                                              Tạo mới
+                                         </span>
+                                        <span class="icn icon-c-add"></span>
+                                    </a>
+                                    <div class="dropdown">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                                id="dropdownMenuButton"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Thao tác
+                                        </button>
+
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Xóa</a>
+                                            <!--                                <a class="dropdown-item" href="#">Another action</a>-->
+                                            <!--                                <a class="dropdown-item" href="#">Something else here</a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Pagination with Only Icons starts -->
+                            <div class="col-md-6 col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Pagination</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Pagination with only icons</p>
+                                        <nav aria-label="Page navigation">
+                                            <ul class="pagination mt-2">
+                                                <li class="page-item prev disabled"><a class="page-link" href="#"></a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item active" aria-current="page">
+                                                    <a class="page-link" href="#">4</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                                <li class="page-item next"><a class="page-link" href="#"></a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="content-header-right text-md-end col-md-3 col-12 d-md-block d-none">
-                <div class="mb-1 breadcrumb-right">
-                    <div class="dropdown">
-                        <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="grid"></i></button>
-                        <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="app-todo.html"><i class="me-1" data-feather="check-square"></i><span class="align-middle">Todo</span></a><a class="dropdown-item" href="app-chat.html"><i class="me-1" data-feather="message-square"></i><span class="align-middle">Chat</span></a><a class="dropdown-item" href="app-email.html"><i class="me-1" data-feather="mail"></i><span class="align-middle">Email</span></a><a class="dropdown-item" href="app-calendar.html"><i class="me-1" data-feather="calendar"></i><span class="align-middle">Calendar</span></a></div>
+            </section>
+
+
+        </div>
+        <div class="content-body mb-4">
+            <h5>Table BH</h5>
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive table-bh">
+                        <div class="filter-table">
+                            <a href="javascript:;" class="filter active">
+                                <span class="txt">Tất cả</span>
+                                <span class="icn">4</span>
+                            </a>
+                            <a href="javascript:;" class="filter">
+                                <span class="txt">Đã xoá</span>
+                            </a>
+                        </div>
+                        <table class="table">
+                            <thead class="table-light">
+                            <tr>
+                                <th scope="col" class="text-nowrap">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="" value="checked">
+                                    </div>
+                                </th>
+                                <th scope="col" class="text-nowrap">Hoạt động</th>
+                                <th scope="col" class="text-nowrap">Tên nhóm</th>
+                                <th scope="col" class="text-center text-nowrap">Ký hiệu</th>
+                                <th scope="col" class="text-center text-nowrap">Thành viên</th>
+                                <th scope="col" class="text-nowrap">Ngày tạo</th>
+                                <th scope="col" class="text-nowrap"></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th class="text-nowrap">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                               value="checked"
+                                               checked="">
+                                    </div>
+                                </th>
+                                <td class="text-nowrap">
+                                    <div class="form-check form-check-success form-switch">
+                                        <input type="checkbox" checked="" class="form-check-input" id="customSwitch4">
+                                    </div>
+                                </td>
+                                <td class="text-nowrap">
+                                    <div class="role adm">Admin</div>
+                                </td>
+                                <td class="text-nowrap">
+                                    <div class="sign text-center">AD</div>
+                                </td>
+                                <td class="text-nowrap">
+                                    <div class="count text-center">3</div>
+                                </td>
+                                <td class="text-nowrap">
+                                    <div class="date-created">08/11/2021 - 09:14</div>
+                                </td>
+                                <td class="text-nowrap">
+                                    <div class="funcsRow d-flex justify-content-end">
+                                        <a href="javascript:;" class="btn btn-outline-primary edit-btn"
+                                           data-bs-toggle="modal"
+                                           data-bs-target="#exampleModalCenter">Quản lý</a>
+                                        <div class="btn-group">
+                                            <button class="btn btn-outline-secondary  waves-effect waves-float waves-light"
+                                                    type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
+                                                          fill="#666666"/>
+                                                    <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
+                                                          fill="#666666"/>
+                                                    <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
+                                                          fill="#666666"/>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-end"
+                                                 aria-labelledby="dropdownMenuButton6" style="">
+                                                <a class="dropdown-item" href="#">Sửa</a>
+                                                <a class="dropdown-item" href="#">Xóa</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                               value="checked"
+                                        >
+                                    </div>
+                                </th>
+                                <td>
+                                    <div class="form-check form-check-success form-switch">
+                                        <input type="checkbox" class="form-check-input" id="customSwitch3">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="role sale">Sale</div>
+                                </td>
+                                <td>
+                                    <div class="sign text-center">SALE</div>
+                                </td>
+                                <td>
+                                    <div class="count text-center">3</div>
+                                </td>
+                                <td>
+                                    <div class="date-created">08/11/2021 - 09:14</div>
+                                </td>
+                                <td>
+                                    <div class="funcsRow d-flex justify-content-end">
+                                        <a href="javascript:;" class="btn btn-outline-primary edit-btn">Quản lý</a>
+                                        <div class="btn-group">
+                                            <button class="btn btn-outline-secondary waves-effect waves-float waves-light"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
+                                                          fill="#666666"/>
+                                                    <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
+                                                          fill="#666666"/>
+                                                    <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
+                                                          fill="#666666"/>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-end"
+                                                 aria-labelledby="dropdownMenuButton1" style="">
+                                                <a class="dropdown-item" href="#">Sửa</a>
+                                                <a class="dropdown-item" href="#">Xóa</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="form-check form-check-inline ">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                               value="checked"
+                                        >
+                                    </div>
+                                </th>
+                                <td>
+                                    <div class="form-check form-check-success form-switch">
+                                        <input type="checkbox" class="form-check-input" id="customSwitch3">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="role mod">Quản lý</div>
+                                </td>
+                                <td>
+                                    <div class="sign text-center">QL</div>
+                                </td>
+                                <td>
+                                    <div class="count text-center">3</div>
+                                </td>
+                                <td>
+                                    <div class="date-created">08/11/2021 - 09:14</div>
+                                </td>
+                                <td>
+                                    <div class="funcsRow d-flex justify-content-end">
+                                        <a href="javascript:;" class="btn btn-outline-primary edit-btn">Quản lý</a>
+                                        <div class="btn-group">
+                                            <button class="btn btn-outline-secondary waves-effect waves-float waves-light"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
+                                                          fill="#666666"/>
+                                                    <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
+                                                          fill="#666666"/>
+                                                    <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
+                                                          fill="#666666"/>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-end"
+                                                 aria-labelledby="dropdownMenuButton1" style="">
+                                                <a class="dropdown-item" href="#">Sửa</a>
+                                                <a class="dropdown-item" href="#">Xóa</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                               value="checked"
+                                        >
+                                    </div>
+                                </th>
+                                <td>
+                                    <div class="form-check form-check-success form-switch">
+                                        <input type="checkbox" class="form-check-input" id="customSwitch3">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="role staff">Nhân viên</div>
+                                </td>
+                                <td>
+                                    <div class="sign text-center">NV</div>
+                                </td>
+                                <td>
+                                    <div class="count text-center">3</div>
+                                </td>
+                                <td>
+                                    <div class="date-created">08/11/2021 - 09:14</div>
+                                </td>
+                                <td>
+                                    <div class="funcsRow d-flex justify-content-end">
+                                        <a href="javascript:;" class="btn btn-outline-primary edit-btn">Quản lý</a>
+                                        <div class="btn-group">
+                                            <button class="btn btn-outline-secondary waves-effect waves-float waves-light"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
+                                                          fill="#666666"/>
+                                                    <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
+                                                          fill="#666666"/>
+                                                    <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
+                                                          fill="#666666"/>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-end"
+                                                 aria-labelledby="dropdownMenuButton1" style="">
+                                                <a class="dropdown-item" href="#">Sửa</a>
+                                                <a class="dropdown-item" href="#">Xóa</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -250,7 +672,8 @@
                             </div>
                             <div class="card-body">
                                 <p class="card-text mb-0">
-                                    Bootstrap includes six predefined button styles, each serving its own semantic purpose.
+                                    Bootstrap includes six predefined button styles, each serving its own semantic
+                                    purpose.
                                 </p>
                                 <!-- basic buttons -->
                                 <div class="demo-inline-spacing">
@@ -298,276 +721,6 @@
             </section>
             <!-- Outline Buttons end -->
 
-            <!-- Flat Buttons start -->
-            <section id="flat-buttons">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Flat</h4>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text mb-0">Use <code>.btn-flat-{color}</code> to create a flat button</p>
-                                <div class="demo-inline-spacing">
-                                    <button type="button" class="btn btn-flat-primary">Primary</button>
-                                    <button type="button" class="btn btn-flat-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-flat-success">Success</button>
-                                    <button type="button" class="btn btn-flat-danger">Danger</button>
-                                    <button type="button" class="btn btn-flat-warning">Warning</button>
-                                    <button type="button" class="btn btn-flat-info">Info</button>
-                                    <button type="button" class="btn btn-flat-dark">Dark</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Flat Buttons end -->
-
-            <!-- Gradient Buttons Start -->
-            <section id="gradient-buttons">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Gradient</h4>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text mb-0">use <code>btn-gradient-{color}</code> create gradient buttons</p>
-                                <!-- basic buttons -->
-                                <div class="demo-inline-spacing">
-                                    <button type="button" class="btn btn-gradient-primary">Primary</button>
-                                    <button type="button" class="btn btn-gradient-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-gradient-success">Success</button>
-                                    <button type="button" class="btn btn-gradient-danger">Danger</button>
-                                    <button type="button" class="btn btn-gradient-warning">Warning</button>
-                                    <button type="button" class="btn btn-gradient-info">Info</button>
-                                    <button type="button" class="btn btn-gradient-dark">Dark</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Gradient Buttons End -->
-
-            <!-- Relief Buttons start -->
-            <section id="relief-buttons">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Relief</h4>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text mb-0">Use <code>.btn-relief-{color}</code> to create a relief button.</p>
-                                <div class="demo-inline-spacing">
-                                    <button type="button" class="btn btn-relief-primary">Primary</button>
-                                    <button type="button" class="btn btn-relief-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-relief-success">Success</button>
-                                    <button type="button" class="btn btn-relief-danger">Danger</button>
-                                    <button type="button" class="btn btn-relief-warning">Warning</button>
-                                    <button type="button" class="btn btn-relief-info">Info</button>
-                                    <button type="button" class="btn btn-relief-dark">Dark</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Relief Buttons end -->
-
-            <!-- Round Buttons start -->
-            <section id="round-outline-button">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Round buttons</h4>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text mb-0">
-                                    Use a class <code>.round</code> with outline button class to create round outline button.
-                                </p>
-                                <!-- Round buttons -->
-                                <div class="demo-inline-spacing">
-                                    <button type="button" class="btn btn-outline-primary round">Primary</button>
-                                    <button type="button" class="btn btn-outline-secondary round">Secondary</button>
-                                    <button type="button" class="btn btn-outline-success round">Success</button>
-                                    <button type="button" class="btn btn-outline-danger round">Danger</button>
-                                    <button type="button" class="btn btn-outline-warning round">Warning</button>
-                                    <button type="button" class="btn btn-outline-info round">Info</button>
-                                    <button type="button" class="btn btn-outline-dark round">Dark</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Round Buttons end -->
-
-            <!-- Basic Button Icon start -->
-            <section id="basic-button-icons">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Icon</h4>
-                            </div>
-                            <div class="card-body">
-                                <!-- Buttons with Icon -->
-                                <div class="demo-inline-spacing">
-                                    <button type="button" class="btn btn-outline-primary">
-                                        <i data-feather="home" class="me-25"></i>
-                                        <span>Home</span>
-                                    </button>
-                                    <button type="button" class="btn btn-warning">
-                                        <i data-feather="star" class="me-25"></i>
-                                        <span>Star</span>
-                                    </button>
-                                    <button type="button" class="btn btn-flat-success">
-                                        <i data-feather="check" class="me-25"></i>
-                                        <span>Done</span>
-                                    </button>
-                                    <button type="button" class="btn btn-outline-primary" disabled>
-                                        <i data-feather="home" class="me-25"></i>
-                                        <span>Home</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Basic Button Icon end -->
-
-            <!-- Icon Buttons start -->
-            <section id="icon-only-buttons">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Icon Only</h4>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text mb-0">
-                                    You can use <code>.btn-icon</code>. you can create a rounded button by using
-                                    <code>.rounded-circle</code> with <code>.btn-icon</code>. You can only use <code>.btn-icon</code> when you
-                                    only want icon in your button
-                                </p>
-                                <div class="demo-inline-spacing">
-                                    <button type="button" class="btn btn-icon btn-outline-primary">
-                                        <i data-feather="search"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-icon btn-warning">
-                                        <i data-feather="inbox"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-icon btn-flat-success">
-                                        <i data-feather="camera"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-icon btn-outline-primary" disabled>
-                                        <i data-feather="search"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-icon rounded-circle btn-outline-primary">
-                                        <i data-feather="search"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-icon btn-icon rounded-circle btn-warning">
-                                        <i data-feather="inbox"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-icon btn-icon rounded-circle btn-flat-success">
-                                        <i data-feather="camera"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-icon btn-icon rounded-circle btn-outline-primary" disabled>
-                                        <i data-feather="search"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Icon Buttons end -->
-
-            <!-- Basic Button group start -->
-            <section id="basic-button-group">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Basic Button group</h4>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    Group a series of buttons together on a single line with the button group. Wrap a series of buttons with
-                                    <code>.btn</code> in <code>.btn-group</code>.
-                                </p>
-                                <!-- button group -->
-                                <div class="row">
-                                    <div class="col-lg-6 col-12 mb-1 mb-lg-0">
-                                        <div class="btn-group" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-primary">Left</button>
-                                            <button type="button" class="btn btn-primary">Middle</button>
-                                            <button type="button" class="btn btn-primary">Right</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-12">
-                                        <div class="btn-group" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-outline-primary"><i data-feather="facebook"></i></button>
-                                            <button type="button" class="btn btn-outline-primary"><i data-feather="twitter"></i></button>
-                                            <button type="button" class="btn btn-outline-primary"><i data-feather="instagram"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Basic Button group end -->
-
-            <!-- Button group checkbox & radio start -->
-            <section id="checkbox-radio-button-group">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Checkbox & radio group</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-6 col-12 mb-1 mb-lg-0">
-                                        <!-- button group checkbox -->
-                                        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                                            <input type="checkbox" class="btn-check" id="btncheck1" checked autocomplete="off" />
-                                            <label class="btn btn-primary" for="btncheck1">Active</label>
-
-                                            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" />
-                                            <label class="btn btn-primary" for="btncheck2">Checkbox</label>
-
-                                            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" />
-                                            <label class="btn btn-primary" for="btncheck3">Checkbox</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-12">
-                                        <!-- button group radio -->
-                                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked />
-                                            <label class="btn btn-outline-primary" for="btnradio1">Active</label>
-
-                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
-                                            <label class="btn btn-outline-primary" for="btnradio2">Radio</label>
-
-                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" />
-                                            <label class="btn btn-outline-primary" for="btnradio3">Radio</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Button group checkbox & radio end -->
 
             <!-- Sizes start -->
             <section id="sizes-2">
@@ -581,7 +734,8 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12 mb-1 mb-md-0">
                                         <p class="card-text mb-0">
-                                            Add <code>.btn-lg</code> or <code>.btn-sm</code> for Fancy larger or smaller buttons size.
+                                            Add <code>.btn-lg</code> or <code>.btn-sm</code> for Fancy larger or smaller
+                                            buttons size.
                                         </p>
                                         <!-- simple sizes -->
                                         <div class="demo-inline-spacing">
@@ -592,7 +746,8 @@
                                     </div>
                                     <div class="col-md-6 col-sm-12">
                                         <p class="card-text mb-0">
-                                            Add <code>.btn-lg</code> or <code>.btn-sm</code> with <code>.btn-outline-*</code> for outline btn in
+                                            Add <code>.btn-lg</code> or <code>.btn-sm</code> with
+                                            <code>.btn-outline-*</code> for outline btn in
                                             different sizes
                                         </p>
                                         <div class="demo-inline-spacing">
@@ -609,58 +764,6 @@
             </section>
             <!-- Sizes end -->
 
-            <!-- Block level buttons start -->
-            <section id="block-level-buttons">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Block level buttons</h4>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Create block level buttons with a mix of our display and gap utilities.</p>
-                                <div class="row">
-                                    <div class="d-grid col-lg-6 col-md-12 mb-1 mb-lg-0">
-                                        <button type="button" class="btn btn-primary">Block level button</button>
-                                    </div>
-                                    <div class="d-grid col-lg-6 col-md-12">
-                                        <button type="button" class="btn btn-outline-primary">Block level button</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Block level buttons end -->
-
-            <!-- Button tags start -->
-            <section id="button-tags">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Button tags</h4>
-                            </div>
-                            <div class="card-body">
-                                <!-- anchor, button tag, input button, input submit Tags -->
-                                <p class="card-text mb-0">
-                                    The <code>.btn</code> classes are designed to be used with the <code>&lt;button&gt;</code> element. However,
-                                    you can also use these classes on <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements.
-                                </p>
-                                <div class="demo-inline-spacing">
-                                    <a class="btn btn-primary" href="https://pixinvent.com/" role="button" target="_blank">Link</a>
-                                    <button class="btn btn-primary" type="submit">Button</button>
-                                    <input class="btn btn-primary" type="button" value="Input" />
-                                    <input class="btn btn-primary" type="submit" value="Submit" />
-                                    <input class="btn btn-primary" type="reset" value="Reset" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Button tags end -->
 
         </div>
         <div class="content-body"><!-- Basic Checkbox start -->
@@ -674,11 +777,13 @@
                             <div class="card-body">
                                 <div class="demo-inline-spacing">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="checked" checked />
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                               value="checked" checked/>
                                         <label class="form-check-label" for="inlineCheckbox1">Checked</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="unchecked" />
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                               value="unchecked"/>
                                         <label class="form-check-label" for="inlineCheckbox2">Unchecked</label>
                                     </div>
                                     <div class="form-check form-check-inline">
@@ -720,32 +825,33 @@
                             </div>
                             <div class="card-body">
                                 <p class="card-text mb-0">
-                                    To change the color of the checkBox use the <code>.form-check-{value}</code> for primary, secondary,
+                                    To change the color of the checkBox use the <code>.form-check-{value}</code> for
+                                    primary, secondary,
                                     success, danger, info, warning.
                                 </p>
                                 <div class="demo-inline-spacing">
                                     <div class="form-check form-check-primary">
-                                        <input type="checkbox" class="form-check-input" id="colorCheck1" checked />
+                                        <input type="checkbox" class="form-check-input" id="colorCheck1" checked/>
                                         <label class="form-check-label" for="colorCheck1">Primary</label>
                                     </div>
                                     <div class="form-check form-check-secondary">
-                                        <input type="checkbox" class="form-check-input" id="colorCheck2" checked />
+                                        <input type="checkbox" class="form-check-input" id="colorCheck2" checked/>
                                         <label class="form-check-label" for="colorCheck2">Secondary</label>
                                     </div>
                                     <div class="form-check form-check-success">
-                                        <input type="checkbox" class="form-check-input" id="colorCheck3" checked />
+                                        <input type="checkbox" class="form-check-input" id="colorCheck3" checked/>
                                         <label class="form-check-label" for="colorCheck3">Success</label>
                                     </div>
                                     <div class="form-check form-check-danger">
-                                        <input type="checkbox" class="form-check-input" id="colorCheck5" checked />
+                                        <input type="checkbox" class="form-check-input" id="colorCheck5" checked/>
                                         <label class="form-check-label" for="colorCheck5">Danger</label>
                                     </div>
                                     <div class="form-check form-check-warning">
-                                        <input type="checkbox" class="form-check-input" id="colorCheck4" checked />
+                                        <input type="checkbox" class="form-check-input" id="colorCheck4" checked/>
                                         <label class="form-check-label" for="colorCheck4">Warning</label>
                                     </div>
                                     <div class="form-check form-check-info">
-                                        <input type="checkbox" class="form-check-input" id="colorCheck6" checked />
+                                        <input type="checkbox" class="form-check-input" id="colorCheck6" checked/>
                                         <label class="form-check-label" for="colorCheck6">Info</label>
                                     </div>
                                 </div>
@@ -829,32 +935,39 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text mb-0">
-                                To change the color of the radio use the <code>.form-check-{value}</code> for primary, secondary, success,
+                                To change the color of the radio use the <code>.form-check-{value}</code> for primary,
+                                secondary, success,
                                 danger, info, warning.
                             </p>
                             <div class="demo-inline-spacing">
                                 <div class="form-check form-check-primary">
-                                    <input type="radio" id="customColorRadio1" name="customColorRadio1" class="form-check-input" checked />
+                                    <input type="radio" id="customColorRadio1" name="customColorRadio1"
+                                           class="form-check-input" checked/>
                                     <label class="form-check-label" for="customColorRadio1">Primary</label>
                                 </div>
                                 <div class="form-check form-check-secondary">
-                                    <input type="radio" id="customColorRadio2" name="customColorRadio2" class="form-check-input" checked />
+                                    <input type="radio" id="customColorRadio2" name="customColorRadio2"
+                                           class="form-check-input" checked/>
                                     <label class="form-check-label" for="customColorRadio2">Secondary</label>
                                 </div>
                                 <div class="form-check form-check-success">
-                                    <input type="radio" id="customColorRadio3" name="customColorRadio3" class="form-check-input" checked />
+                                    <input type="radio" id="customColorRadio3" name="customColorRadio3"
+                                           class="form-check-input" checked/>
                                     <label class="form-check-label" for="customColorRadio3">Success</label>
                                 </div>
                                 <div class="form-check form-check-danger">
-                                    <input type="radio" id="customColorRadio5" name="customColorRadio5" class="form-check-input" checked />
+                                    <input type="radio" id="customColorRadio5" name="customColorRadio5"
+                                           class="form-check-input" checked/>
                                     <label class="form-check-label" for="customColorRadio5">Danger</label>
                                 </div>
                                 <div class="form-check form-check-warning">
-                                    <input type="radio" id="customColorRadio4" name="customColorRadio4" class="form-check-input" checked />
+                                    <input type="radio" id="customColorRadio4" name="customColorRadio4"
+                                           class="form-check-input" checked/>
                                     <label class="form-check-label" for="customColorRadio4">Warning</label>
                                 </div>
                                 <div class="form-check form-check-info">
-                                    <input type="radio" id="customRadio6" name="customColorRadio6" class="form-check-input" checked />
+                                    <input type="radio" id="customRadio6" name="customColorRadio6"
+                                           class="form-check-input" checked/>
                                     <label class="form-check-label" for="customRadio6">Info</label>
                                 </div>
                             </div>
@@ -950,7 +1063,8 @@
                                 </div>
                                 <div class="mb-1">
                                     <label class="form-label" for="multiSelectSizing">Using Size Attribute</label>
-                                    <select class="form-select" size="3" aria-label="size 3 select" id="multiSelectSizing">
+                                    <select class="form-select" size="3" aria-label="size 3 select"
+                                            id="multiSelectSizing">
                                         <option selected>Open this select menu</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -986,48 +1100,7 @@
                                             <option value="WA">Washington</option>
                                             <option value="AZ">Arizona</option>
                                             <option value="CO">Colorado</option>
-                                            <option value="ID">Idaho</option>
-                                            <option value="MT">Montana</option>
-                                            <option value="NE">Nebraska</option>
-                                            <option value="NM">New Mexico</option>
-                                            <option value="ND">North Dakota</option>
-                                            <option value="UT">Utah</option>
-                                            <option value="WY">Wyoming</option>
-                                            <option value="AL">Alabama</option>
-                                            <option value="AR">Arkansas</option>
-                                            <option value="IL">Illinois</option>
-                                            <option value="IA">Iowa</option>
-                                            <option value="KS">Kansas</option>
-                                            <option value="KY">Kentucky</option>
-                                            <option value="LA">Louisiana</option>
-                                            <option value="MN">Minnesota</option>
-                                            <option value="MS">Mississippi</option>
-                                            <option value="MO">Missouri</option>
-                                            <option value="OK">Oklahoma</option>
-                                            <option value="SD">South Dakota</option>
-                                            <option value="TX">Texas</option>
-                                            <option value="TN">Tennessee</option>
-                                            <option value="WI">Wisconsin</option>
-                                            <option value="CT">Connecticut</option>
-                                            <option value="DE">Delaware</option>
-                                            <option value="FL">Florida</option>
-                                            <option value="GA">Georgia</option>
-                                            <option value="IN">Indiana</option>
-                                            <option value="ME">Maine</option>
-                                            <option value="MD">Maryland</option>
-                                            <option value="MA">Massachusetts</option>
-                                            <option value="MI">Michigan</option>
-                                            <option value="NH">New Hampshire</option>
-                                            <option value="NJ">New Jersey</option>
-                                            <option value="NY">New York</option>
-                                            <option value="NC">North Carolina</option>
-                                            <option value="OH">Ohio</option>
-                                            <option value="PA">Pennsylvania</option>
-                                            <option value="RI">Rhode Island</option>
-                                            <option value="SC">South Carolina</option>
-                                            <option value="VT">Vermont</option>
-                                            <option value="VA">Virginia</option>
-                                            <option value="WV">West Virginia</option>
+
                                         </select>
                                     </div>
 
@@ -1168,7 +1241,8 @@
                                     <!-- Icons -->
                                     <div class="col-md-6 mb-1">
                                         <label class="form-label" for="select2-icons">Icons</label>
-                                        <select data-placeholder="Select a state..." class="select2-icons form-select" id="select2-icons">
+                                        <select data-placeholder="Select a state..." class="select2-icons form-select"
+                                                id="select2-icons">
                                             <optgroup label="Social Media">
                                                 <option value="facebook" data-icon="facebook" selected>Facebook</option>
                                                 <option value="twitter" data-icon="twitter">Twitter</option>
@@ -1293,8 +1367,10 @@
                                                 <div class="modal-dialog">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h4 class="modal-title" id="myModalLabel1">Select2 In Modal</h4>
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            <h4 class="modal-title" id="myModalLabel1">Select2 In
+                                                                Modal</h4>
+                                                            <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
                                                         <div class="modal-body">
                                                             <p>This is Select2 Example in Modal.</p>
@@ -1354,7 +1430,9 @@
                                                             </select>
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Accept</button>
+                                                            <button type="button" class="btn btn-primary"
+                                                                    data-bs-dismiss="modal">Accept
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1379,8 +1457,10 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <p class="card-text">
-                                            For different sizes of select2, Use classes like <code>.select2-size-sm</code> &amp;
-                                            <code>.select2-size-lg</code> for Small &amp; Large &amp; Multi Selects respectively.
+                                            For different sizes of select2, Use classes like
+                                            <code>.select2-size-sm</code> &amp;
+                                            <code>.select2-size-lg</code> for Small &amp; Large &amp; Multi Selects
+                                            respectively.
                                         </p>
                                     </div>
                                     <div class="col-12">
@@ -1438,14 +1518,17 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <p class="card-text">
-                                            For different sizes of select2, Use classes like <code>.select2-size-sm</code> &amp;
-                                            <code>.select2-size-lg</code> for Small &amp; Large &amp; Selects respectively.
+                                            For different sizes of select2, Use classes like
+                                            <code>.select2-size-sm</code> &amp;
+                                            <code>.select2-size-lg</code> for Small &amp; Large &amp; Selects
+                                            respectively.
                                         </p>
                                     </div>
                                     <div class="col-12">
                                         <label class="form-label" for="large-select-multi">Large</label>
                                         <div class="mb-1">
-                                            <select class="select2-size-lg form-select" multiple="multiple" id="large-select-multi">
+                                            <select class="select2-size-lg form-select" multiple="multiple"
+                                                    id="large-select-multi">
                                                 <option value="square" selected>Square</option>
                                                 <option value="rectangle">Rectangle</option>
                                                 <option value="rombo">Rombo</option>
@@ -1459,7 +1542,8 @@
                                     <div class="col-12">
                                         <label class="form-label" for="default-select-multi">Default</label>
                                         <div class="mb-1">
-                                            <select class="select2 form-select" multiple="multiple" id="default-select-multi">
+                                            <select class="select2 form-select" multiple="multiple"
+                                                    id="default-select-multi">
                                                 <option value="square">Square</option>
                                                 <option value="rectangle">Rectangle</option>
                                                 <option value="rombo">Rombo</option>
@@ -1473,7 +1557,8 @@
                                     <div class="col-12">
                                         <label class="form-label" for="small-select-multi">Small</label>
                                         <div class="mb-1">
-                                            <select class="select2-size-sm form-select" multiple="multiple" id="small-select-multi">
+                                            <select class="select2-size-sm form-select" multiple="multiple"
+                                                    id="small-select-multi">
                                                 <option value="square">Square</option>
                                                 <option value="rectangle">Rectangle</option>
                                                 <option value="rombo" selected>Rombo</option>
@@ -1493,8 +1578,922 @@
             <!-- Select2 End -->
 
         </div>
+        <div class="content-body">
+            <!-- Basic Inputs start -->
+            <section id="basic-input">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Basic Inputs</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <div class="form-input">
+                                            <label class="form-label" for="basicInput">
+                                                Họ <span>*</span>
+                                            </label>
+                                            <input type="text" class="form-control" id="basicInput"
+                                                   placeholder="Nhập nội dung...">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="form-input">
+                                            <label class="form-label" for="basicInput">
+                                                Giá giảm
+                                            </label>
+                                            <div class="input-group input-group-merge ">
+                                                <input type="text" class="form-control" placeholder="Nhập giá" aria-label="A">
+                                                <span class="input-group-text">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6 col-12">
+                                        <div class="mb-1">
+                                            <label class="form-label" for="basicInput">Basic Input</label>
+                                            <input type="text" class="form-control" id="basicInput"
+                                                   placeholder="Enter email"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6 col-12">
+                                        <div class="mb-1">
+                                            <label class="form-label" for="helpInputTop">Input text with help</label>
+                                            <small class="text-muted">eg.<i>someone@example.com</i></small>
+                                            <input type="text" class="form-control" id="helpInputTop"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6 col-12">
+                                        <div class="mb-1">
+                                            <label class="form-label" for="disabledInput">Disabled Input</label>
+                                            <input type="text" class="form-control" id="disabledInput" disabled/>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6 col-12">
+                                        <div class="mb-1">
+                                            <label class="form-label" for="helperText">With Helper Text</label>
+                                            <input type="text" id="helperText" class="form-control" placeholder="Name"/>
+                                            <p><small class="text-muted">Find helper text here for given
+                                                textbox.</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6 col-12 mb-1 mb-md-0">
+                                        <label class="form-label" for="disabledInput">Readonly Input</label>
+                                        <input type="text" class="form-control" id="readonlyInput" readonly="readonly"
+                                               value="You can't update me :P"/>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6 col-12">
+                                        <label class="form-label" for="disabledInput">Readonly Static Text</label>
+                                        <p class="form-control-static" id="staticInput">email@pixinvent.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Basic Inputs end -->
+
+            <!-- Input Sizing start -->
+            <section id="input-sizing">
+                <div class="row match-height">
+                    <div class="col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Sizing Options</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="card-text">
+                                            For different sizes of Input, Use classes like <code>.form-control-lg</code>
+                                            &amp;
+                                            <code>.form-control-sm</code> for Large, Small input box.
+                                        </p>
+                                        <div class="mb-1">
+                                            <label class="form-label" for="largeInput">Large</label>
+                                            <input id="largeInput" class="form-control form-control-lg" type="text"
+                                                   placeholder="Large Input"/>
+                                        </div>
+                                        <div class="mb-1">
+                                            <label class="form-label" for="defaultInput">Default</label>
+                                            <input id="defaultInput" class="form-control" type="text"
+                                                   placeholder="Normal Input"/>
+                                        </div>
+                                        <div>
+                                            <label class="form-label" for="smallInput">Small</label>
+                                            <input id="smallInput" class="form-control form-control-sm" type="text"
+                                                   placeholder="Small Input"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Horizontal form label sizing</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="card-text mb-2">
+                                            Be sure to use <code>.col-form-label-sm</code> or
+                                            <code>.col-form-label-lg</code> to your
+                                            <code>&lt;label&gt;</code>s or <code>&lt;legend&gt;</code>s to correctly
+                                            follow the size of
+                                            <code>.form-control-lg</code> and <code>.form-control-sm</code>.
+                                        </p>
+                                        <div class="mb-1 row">
+                                            <label for="colFormLabelLg" class="col-sm-3 col-form-label-lg">Large</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-lg"
+                                                       id="colFormLabelLg" placeholder="Large Input"/>
+                                            </div>
+                                        </div>
+                                        <div class="mb-1 row">
+                                            <label for="colFormLabel" class="col-sm-3 col-form-label">Default</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="colFormLabel"
+                                                       placeholder="Normal Input"/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <label for="colFormLabelSm" class="col-sm-3 col-form-label-sm">Small</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm"
+                                                       id="colFormLabelSm" placeholder="Small Input"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Input Sizing end -->
+
+            <!-- Floating Label Inputs start -->
+            <section id="floating-label-input">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Floating Label Inputs</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 mb-1">
+                                        <p>
+                                            For Floating Label Inputs, need to use <code>.form-floating</code> class &
+                                            add attribute
+                                            <code>disabled</code> for disabled Floating Label Input.
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-6 col-12 mb-1 mb-sm-0">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floating-label1"
+                                                   placeholder="Label-placeholder"/>
+                                            <label for="floating-label1">Label-placeholder</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floating-label-disable"
+                                                   placeholder="Label-placeholder" disabled/>
+                                            <label for="floating-label-disable">Disabled-placeholder</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Floating Label Inputs end -->
+
+            <!-- Basic File Browser start -->
+            <section id="input-file-browser">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">File input</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 mb-1 mb-sm-0">
+                                        <label for="formFile" class="form-label">Simple file input</label>
+                                        <input class="form-control" type="file" id="formFile"/>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <label for="formFileMultiple" class="form-label">Multiple files input</label>
+                                        <input class="form-control" type="file" id="formFileMultiple" multiple/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Basic File Browser end -->
+
+            <!-- validations start -->
+            <section class="validations" id="validation">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Input Validation States</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>
+                                            You can indicate invalid and valid form fields with <code>.is-invalid</code>
+                                            and <code>.is-valid</code>.
+                                            Note that <code>.invalid-feedback</code> is also supported with these
+                                            classes.
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-6 col-12">
+                                        <label class="form-label" for="valid-state">Valid State</label>
+                                        <input type="text" class="form-control is-valid" id="valid-state"
+                                               placeholder="Valid" value="Valid" required/>
+                                        <div class="valid-feedback">This is valid state.</div>
+                                    </div>
+                                    <div class="col-sm-6 col-12">
+                                        <label class="form-label" for="invalid-state">Invalid State</label>
+                                        <input type="text" class="form-control is-invalid" id="invalid-state"
+                                               placeholder="Invalid" value="Invalid" required/>
+                                        <div class="invalid-feedback">This is invalid state.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- validations end -->
+
+            <!-- Tooltip validations start -->
+            <section class="tooltip-validations" id="tooltip-validation">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Input Validation States with Tooltips</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    <code>.{valid/invalid}-feedback</code> classes for
+                                    <code>.{valid/invalid}-tooltip</code> classes to display
+                                    validation feedback in a styled tooltip.
+                                </p>
+                                <form class="needs-validation" novalidate>
+                                    <div class="row g-1">
+                                        <div class="col-md-4 col-12 mb-3 position-relative">
+                                            <label class="form-label" for="validationTooltip01">First name</label>
+                                            <input type="text" class="form-control" id="validationTooltip01"
+                                                   placeholder="First name" value="Mark" required/>
+                                            <div class="valid-tooltip">Looks good!</div>
+                                        </div>
+                                        <div class="col-md-4 col-12 mb-3 position-relative">
+                                            <label class="form-label" for="validationTooltip02">Last name</label>
+                                            <input type="text" class="form-control" id="validationTooltip02"
+                                                   placeholder="Last name" value="Otto" required/>
+                                            <div class="valid-tooltip">Looks good!</div>
+                                        </div>
+                                        <div class="col-md-4 col-12 mb-3 position-relative">
+                                            <label class="form-label" for="validationTooltip03">City</label>
+                                            <input type="text" class="form-control" id="validationTooltip03"
+                                                   placeholder="City" required/>
+                                            <div class="invalid-tooltip">Please provide a valid city.</div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Tooltip validations end -->
+
+        </div>
+        <div class="content-body">
+            <section id="input-group-basic">
+                <div class="row">
+                    <!-- Basic -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Basic</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text" id="basic-addon-search1"><i
+                                            data-feather="search"></i></span>
+                                    <input type="text" class="form-control" placeholder="Search..."
+                                           aria-label="Search..." aria-describedby="basic-addon-search1"/>
+                                </div>
+
+                                <label class="form-label" for="basic-default-password">Password</label>
+                                <div class="input-group form-password-toggle mb-2">
+                                    <input type="password" class="form-control" id="basic-default-password"
+                                           placeholder="Your Password" aria-describedby="basic-default-password"/>
+                                    <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                           aria-describedby="basic-addon1"/>
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <input type="text" class="form-control" placeholder="Recipient's username"
+                                           aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+                                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                                    <input type="text" class="form-control" id="basic-url3"
+                                           aria-describedby="basic-addon3"/>
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text">$</span>
+                                    <input type="text" class="form-control" placeholder="100"
+                                           aria-label="Amount (to the nearest dollar)"/>
+                                    <span class="input-group-text">.00</span>
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-text">With textarea</span>
+                                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Merged -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Merged</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="input-group input-group-merge mb-2">
+                                    <span class="input-group-text" id="basic-addon-search2"><i
+                                            data-feather="search"></i></span>
+                                    <input type="text" class="form-control" placeholder="Search..."
+                                           aria-label="Search..." aria-describedby="basic-addon-search2"/>
+                                </div>
+
+                                <label class="form-label" for="basic-default-password1">Password</label>
+                                <div class="input-group input-group-merge form-password-toggle mb-2">
+                                    <input type="password" class="form-control" id="basic-default-password1"
+                                           placeholder="Your Password" aria-describedby="basic-default-password1"/>
+                                    <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
+                                </div>
+
+                                <div class="input-group input-group-merge mb-2">
+                                    <span class="input-group-text" id="basic-addon5">@</span>
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                           aria-describedby="basic-addon5"/>
+                                </div>
+
+                                <div class="input-group input-group-merge mb-2">
+                                    <input type="text" class="form-control" placeholder="Recipient's username"
+                                           aria-label="Recipient's username" aria-describedby="basic-addon6"/>
+
+                                    <span class="input-group-text" id="basic-addon6">@example.com</span>
+                                </div>
+
+                                <div class="input-group input-group-merge mb-2">
+                                    <span class="input-group-text" id="basic-addon7">https://example.com/users/</span>
+                                    <input type="text" class="form-control" id="basic-url7"
+                                           aria-describedby="basic-addon7"/>
+                                </div>
+
+                                <div class="input-group input-group-merge mb-2">
+                                    <span class="input-group-text">$</span>
+                                    <input type="text" class="form-control" placeholder="100"
+                                           aria-label="Amount (to the nearest dollar)"/>
+                                    <span class="input-group-text">.00</span>
+                                </div>
+
+                                <div class="input-group input-group-merge">
+                                    <span class="input-group-text">With textarea</span>
+                                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sizing -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Sizing</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="input-group input-group-lg mb-1">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control form-control-lg" placeholder="Username"/>
+                                </div>
+
+                                <div class="input-group mb-1">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control" placeholder="Username"/>
+                                </div>
+
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control form-control-sm" placeholder="Username"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Checkbox and radio addons -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Checkbox and radio addons</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <label class="form-label">Input Group with Checkbox</label>
+                                    <div class="col-md">
+                                        <div class="mb-1">
+                                            <div class="input-group">
+                                                <div class="input-group-text">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox"
+                                                               id="inputCheckbox"/>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="Message"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="mb-1">
+                                            <div class="input-group">
+                                                <div class="input-group-text">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox"
+                                                               id="inputCheckbox1"/>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="Message"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label class="form-label">Input Group with Radio</label>
+                                    <div class="col-md">
+                                        <!-- Custom checkbox -->
+                                        <div class="mb-1">
+                                            <div class="input-group">
+                                                <div class="input-group-text">
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-check-input" name="customRadio"
+                                                               id="colorRadio1"/>
+                                                        <label class="form-check-label" for="colorRadio1"></label>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="Message"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md">
+                                        <!-- Custom radio -->
+                                        <div class="mb-1">
+                                            <div class="input-group">
+                                                <div class="input-group-text">
+                                                    <div class="form-check">
+                                                        <input type="radio" id="customRadio1" name="customRadio"
+                                                               class="form-check-input"/>
+                                                        <label class="form-check-label" for="customRadio1"></label>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="Message"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Inputs Group with Buttons -->
+            <section id="input-group-buttons">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Input Groups with Buttons</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Add span with <code>.input-group-btn</code> class and add button inside
+                                    <b>before</b> or <b>after</b>
+                                    <code>&lt;input&gt;</code>.
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-6 col-12 mb-1">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Button on right"
+                                                   aria-describedby="button-addon2"/>
+                                            <button class="btn btn-outline-primary" id="button-addon2" type="button">
+                                                Go
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12 mb-1">
+                                        <div class="input-group">
+                                            <button class="btn btn-outline-primary" type="button">
+                                                <i data-feather="search"></i>
+                                            </button>
+                                            <input type="text" class="form-control" placeholder="Button on both side"
+                                                   aria-label="Amount"/>
+                                            <button class="btn btn-outline-primary" type="button">Search !</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Inputs Group with Buttons end -->
+
+            <!-- Inputs Group with Dropdown -->
+            <section id="input-group-dropdown">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Input Groups with Dropdown</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Add <code>&lt;button&gt;</code> with <code>.dropdown-toggle</code> class and add
+                                    dropdown-menu after it to
+                                    get input group with dropdown.
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-6 col-12 mb-1">
+                                        <fieldset>
+                                            <div class="input-group">
+                                                <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                                        data-bs-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                    Action
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                    <div role="separator" class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="Dropdown on left"/>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-6 col-12 mb-1">
+                                        <fieldset>
+                                            <div class="input-group">
+                                                <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                                        data-bs-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                    <i data-feather="edit-2"></i>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                    <div role="separator" class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                </div>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Dropdown on both side" aria-label="Amount"/>
+                                                <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                                        data-bs-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                    Action
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                    <div role="separator" class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Inputs Group with Dropdown end -->
+
+        </div>
+        <div class="content-body">
+            <!-- Basic Switches Starts -->
+            <section id="basic-switches">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Switch</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="demo-inline-spacing">
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" id="customSwitch1"/>
+                                        <label class="form-check-label" for="customSwitch1">Toggle this switch
+                                            element</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" disabled id="customSwitch2"/>
+                                        <label class="form-check-label" for="customSwitch2">Disabled switch
+                                            element</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Basic Switches Ends -->
+
+            <!-- Switch Colors Starts -->
+            <section id="switch-colors">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Colored Switch</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text mb-0">
+                                    Use class <code>.form-check-#{$color-name}</code> with <code>.form-switch</code> to
+                                    change switch's color
+                                </p>
+                                <div class="demo-inline-spacing">
+                                    <div class="d-flex flex-column">
+                                        <label class="form-check-label mb-50" for="customSwitch3">Primary</label>
+                                        <div class="form-check form-check-primary form-switch">
+                                            <input type="checkbox" checked class="form-check-input" id="customSwitch3"/>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <label class="form-check-label mb-50" for="customSwitch44">Secondary</label>
+                                        <div class="form-check form-check-secondary form-switch">
+                                            <input type="checkbox" checked class="form-check-input"
+                                                   id="customSwitch44"/>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <label class="form-check-label mb-50" for="customSwitch4">Success</label>
+                                        <div class="form-check form-check-success form-switch">
+                                            <input type="checkbox" checked class="form-check-input" id="customSwitch4"/>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <label class="form-check-label mb-50" for="customSwitch5">Danger</label>
+                                        <div class="form-check form-check-danger form-switch">
+                                            <input type="checkbox" checked class="form-check-input" id="customSwitch5"/>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <label class="form-check-label mb-50" for="customSwitch7">Warning</label>
+                                        <div class="form-check form-check-warning form-switch">
+                                            <input type="checkbox" checked class="form-check-input" id="customSwitch7"/>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <label class="form-check-label mb-50" for="customSwitch6">Info</label>
+                                        <div class="form-check form-check-info form-switch">
+                                            <input type="checkbox" checked class="form-check-input" id="customSwitch6"/>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <label class="form-check-label mb-50" for="customSwitch8">Dark</label>
+                                        <div class="form-check form-check-dark form-switch">
+                                            <input type="checkbox" checked class="form-check-input" id="customSwitch8"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Switch Colors Ends -->
+
+            <!-- Switch Icons Starts -->
+            <section id="switch-icons">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Switch with Icons</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text mb-0">
+                                    Use class <code>.switch-icon-left & .switch-icon-right</code> inside of <code>.form-check-label</code>
+                                    to
+                                    create a switch with icon.
+                                </p>
+                                <div class="demo-inline-spacing">
+                                    <div class="d-flex flex-column">
+                                        <label class="form-check-label mb-50" for="customSwitch10">Primary</label>
+                                        <div class="form-check form-switch form-check-primary">
+                                            <input type="checkbox" class="form-check-input" id="customSwitch10"
+                                                   checked/>
+                                            <label class="form-check-label" for="customSwitch10">
+                                                <span class="switch-icon-left"><i data-feather="check"></i></span>
+                                                <span class="switch-icon-right"><i data-feather="x"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <label class="form-check-label mb-50" for="customSwitch11">Secondary</label>
+                                        <div class="form-check form-switch form-check-secondary">
+                                            <input type="checkbox" class="form-check-input" id="customSwitch11"
+                                                   checked/>
+                                            <label class="form-check-label" for="customSwitch11">
+                                                <span class="switch-icon-left"><i data-feather="check"></i></span>
+                                                <span class="switch-icon-right"><i data-feather="x"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <label class="form-check-label mb-50" for="customSwitch111">Success</label>
+                                        <div class="form-check form-switch form-check-success">
+                                            <input type="checkbox" class="form-check-input" id="customSwitch111"
+                                                   checked/>
+                                            <label class="form-check-label" for="customSwitch111">
+                                                <span class="switch-icon-left"><i data-feather="check"></i></span>
+                                                <span class="switch-icon-right"><i data-feather="x"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <label class="form-check-label mb-50" for="customSwitch12">Danger</label>
+                                        <div class="form-check form-switch form-check-danger">
+                                            <input type="checkbox" class="form-check-input" id="customSwitch12"
+                                                   checked/>
+                                            <label class="form-check-label" for="customSwitch12">
+                                                <span class="switch-icon-left"><i data-feather="check"></i></span>
+                                                <span class="switch-icon-right"><i data-feather="x"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <label class="form-check-label mb-50" for="customSwitch14">Warning</label>
+                                        <div class="form-check form-switch form-check-warning">
+                                            <input type="checkbox" class="form-check-input" id="customSwitch14"
+                                                   checked/>
+                                            <label class="form-check-label" for="customSwitch14">
+                                                <span class="switch-icon-left"><i data-feather="check"></i></span>
+                                                <span class="switch-icon-right"><i data-feather="x"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <label class="form-check-label mb-50" for="customSwitch13">Info</label>
+                                        <div class="form-check form-switch form-check-info">
+                                            <input type="checkbox" class="form-check-input" id="customSwitch13"
+                                                   checked/>
+                                            <label class="form-check-label" for="customSwitch13">
+                                                <span class="switch-icon-left"><i data-feather="check"></i></span>
+                                                <span class="switch-icon-right"><i data-feather="x"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <label class="form-check-label mb-50" for="customSwitch15">Dark</label>
+                                        <div class="form-check form-switch form-check-dark">
+                                            <input type="checkbox" class="form-check-input" id="customSwitch15"
+                                                   checked/>
+                                            <label class="form-check-label" for="customSwitch15">
+                                                <span class="switch-icon-left"><i data-feather="check"></i></span>
+                                                <span class="switch-icon-right"><i data-feather="x"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Switch Icons Ends -->
+
+        </div>
+        <div class="content-body">
+            <!-- Basic Tabs starts -->
+            <div class="col-xl-6 col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Basic Tab</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home"
+                                   aria-controls="home" role="tab" aria-selected="true">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile"
+                                   aria-controls="profile" role="tab" aria-selected="false">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="disabled" id="disabled-tab" class="nav-link disabled">Disabled</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="about-tab" data-bs-toggle="tab" href="#about"
+                                   aria-controls="about" role="tab" aria-selected="false">Account</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="home" aria-labelledby="home-tab" role="tabpanel">
+                                <p>
+                                    Candy canes donut chupa chups candy canes lemon drops oat cake wafer. Cotton
+                                    candy candy canes marzipan
+                                    carrot cake. Sesame snaps lemon drops candy marzipan donut brownie tootsie
+                                    roll. Icing croissant bonbon
+                                    biscuit gummi bears. Pudding candy canes sugar plum cookie chocolate cake
+                                    powder croissant.
+                                </p>
+                                <p>
+                                    Carrot cake tiramisu danish candy cake muffin croissant tart dessert.
+                                    Tiramisu caramels candy canes
+                                    chocolate cake sweet roll liquorice icing cupcake. Candy cookie sweet roll
+                                    bear claw sweet roll.
+                                </p>
+                            </div>
+                            <div class="tab-pane" id="profile" aria-labelledby="profile-tab" role="tabpanel">
+                                <p>
+                                    Dragée jujubes caramels tootsie roll gummies gummies icing bonbon. Candy
+                                    jujubes cake cotton candy.
+                                    Jelly-o lollipop oat cake marshmallow fruitcake candy canes toffee. Jelly
+                                    oat cake pudding jelly beans
+                                    brownie lemon drops ice cream halvah muffin. Brownie candy tiramisu macaroon
+                                    tootsie roll danish.
+                                </p>
+                                <p>
+                                    Croissant pie cheesecake sweet roll. Gummi bears cotton candy tart jelly-o
+                                    caramels apple pie jelly
+                                    danish marshmallow. Icing caramels lollipop topping. Bear claw powder sesame
+                                    snaps.
+                                </p>
+                            </div>
+                            <div class="tab-pane" id="disabled" aria-labelledby="disabled-tab" role="tabpanel">
+                                <p>
+                                    Chocolate croissant cupcake croissant jelly donut. Cheesecake toffee apple
+                                    pie chocolate bar biscuit
+                                    tart croissant. Lemon drops danish cookie. Oat cake macaroon icing tart
+                                    lollipop cookie sweet bear claw.
+                                </p>
+                            </div>
+                            <div class="tab-pane" id="about" aria-labelledby="about-tab" role="tabpanel">
+                                <p>
+                                    Gingerbread cake cheesecake lollipop topping bonbon chocolate sesame snaps.
+                                    Dessert macaroon bonbon
+                                    carrot cake biscuit. Lollipop lemon drops cake gingerbread liquorice. Sweet
+                                    gummies dragée. Donut bear
+                                    claw pie halvah oat cake cotton candy sweet roll. Cotton candy sweet roll
+                                    donut ice cream.
+                                </p>
+                                <p>
+                                    Halvah bonbon topping halvah ice cream cake candy. Wafer gummi bears
+                                    chocolate cake topping powder.
+                                    Sweet marzipan cheesecake jelly-o powder wafer lemon drops lollipop cotton
+                                    candy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-    </div>
+</div>
 </div>
 <!-- END: Content-->
 
