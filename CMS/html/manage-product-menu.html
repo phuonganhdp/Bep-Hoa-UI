@@ -381,20 +381,20 @@
                                         <label class="form-label" for="basicInput">
                                             Trạng thái
                                         </label>
-                                        <div class="selectBox ">
-                                            <div class="selected">
+                                        <div class="selectBox sl-advance">
+                                            <div class="selected sla-btn-click">
                                                 <span class="icn green"></span>
                                                 <span class="txt">Hoạt động</span>
                                             </div>
-                                            <ul class="list-select-type list-group">
-                                                <li class="list-group-item">
-                                                    <a href="javascript:;" class="select-type">
+                                            <ul class="list-select-type list-group sla-list">
+                                                <li class="list-group-item sla-item">
+                                                    <a href="javascript:;" class="select-type sla-item-value">
                                                         <span class="icn green"></span>
                                                         <span class="txt">Hoạt động</span>
                                                     </a>
                                                 </li>
-                                                <li class="list-group-item">
-                                                    <a href="javascript:;" class="select-type">
+                                                <li class="list-group-item sla-item">
+                                                    <a href="javascript:;" class="select-type sla-item-value">
                                                         <span class="icn red"></span>
                                                         <span class="txt">Dừng hoạt động</span>
                                                     </a>
@@ -402,6 +402,8 @@
 
                                             </ul>
                                         </div>
+
+                                        
                                     </div>
                                     <div class="form-input mb-2">
                                         <label class="form-label" for="basicInput">
@@ -512,5 +514,26 @@
 </script>
 </body>
 <!-- END: Body-->
+
+<script>
+    $(function () {
+        $('.sla-btn-click').off('click').click(function () {
+            let btn = $(this);
+            let wrapt = btn.parents('.sl-advance');
+            if(wrapt.hasClass('active')){
+                wrapt.removeClass('active');
+            }else{
+                wrapt.addClass('active');
+            }
+        });
+        $('.sla-list .sla-item').off('click').click(function () {
+            let item = $(this);
+            let wrapt = item.parents('.sl-advance');
+            wrapt.removeClass('active');
+            let val = item.find('.sla-item-value').html();
+            wrapt.find('.sla-btn-click').html(val);
+        });
+    });
+</script>
 
 </html>
